@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Sales - Klovva</title>
+    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="demo-request.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Demo Request Form Page -->
+    <div class="demo-request-page">
+        <div class="demo-request-container">
+            <div class="demo-request-card">
+                <div class="demo-request-header">
+                    <button class="demo-close-btn" onclick="window.location.href='index.html'">
+                        <i data-lucide="x"></i>
+                    </button>
+                    <h2>Contact Sales</h2>
+                    <p>Get in touch with our team to learn how Klovva can transform your lobbying practice</p>
+                </div>
+
+                <form class="demo-request-form" onsubmit="handleDemoSubmit(event)">
+                    <!-- Contact Information Section -->
+                    <div class="form-section">
+                        <div class="form-section-header">
+                            <i data-lucide="mail" class="section-icon"></i>
+                            <h3>Contact Information</h3>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="businessEmail">Business Email *</label>
+                                <input type="email" id="businessEmail" name="businessEmail" required placeholder="john@company.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+1 (555) 123-4567">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Company Information Section -->
+                    <div class="form-section">
+                        <div class="form-section-header">
+                            <i data-lucide="building" class="section-icon"></i>
+                            <h3>Company Information</h3>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="companyName">Company/Firm Name *</label>
+                                <input type="text" id="companyName" name="companyName" required placeholder="Acme Lobbying Group">
+                            </div>
+                            <div class="form-group">
+                                <label for="jobTitle">Your Title</label>
+                                <input type="text" id="jobTitle" name="jobTitle" placeholder="Senior Partner">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firmSize">Firm Size</label>
+                            <select id="firmSize" name="firmSize">
+                                <option value="">Select firm size</option>
+                                <option value="1-5">1-5 people</option>
+                                <option value="6-15">6-15 people</option>
+                                <option value="16-50">16-50 people</option>
+                                <option value="51-100">51-100 people</option>
+                                <option value="100+">100+ people</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- How can we help Section -->
+                    <div class="form-section">
+                        <div class="form-section-header">
+                            <i data-lucide="help-circle" class="section-icon"></i>
+                            <h3>How can we help?</h3>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="needs">Tell us about your needs</label>
+                            <textarea id="needs" name="needs" rows="3" placeholder="Describe your current challenges, what you're looking for in a lobbying platform, number of bills you track, etc."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Primary Areas of Interest (optional)</label>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="interests" value="bill-tracking">
+                                    <span class="checkmark"></span>
+                                    Bill Tracking & Monitoring
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="interests" value="client-management">
+                                    <span class="checkmark"></span>
+                                    Client Management
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="interests" value="ai-insights">
+                                    <span class="checkmark"></span>
+                                    AI-Powered Insights
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="interests" value="legislator-database">
+                                    <span class="checkmark"></span>
+                                    Legislator Database
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="interests" value="analytics">
+                                    <span class="checkmark"></span>
+                                    Analytics & Reporting
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="interests" value="task-management">
+                                    <span class="checkmark"></span>
+                                    Task Management
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="interests" value="api">
+                                    <span class="checkmark"></span>
+                                    API & Integrations
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="interests" value="enterprise">
+                                    <span class="checkmark"></span>
+                                    Enterprise Features
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline" onclick="window.location.href='index.html'">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Send Request</button>
+                    </div>
+
+                    <!-- Disclaimer -->
+                    <p class="form-disclaimer">By submitting this form, you agree to receive communications from Klovva. We respect your privacy and will never share your information.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Force demo request styles to override any conflicting CSS */
+        .demo-request-page .demo-request-form .form-row {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr !important;
+            gap: 1rem !important;
+            margin-bottom: 1rem !important;
+        }
+        .demo-request-page .demo-request-form .form-row .form-group {
+            margin-bottom: 0 !important;
+        }
+        .demo-request-page .demo-request-form .checkbox-grid {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr !important;
+            gap: 0.5rem !important;
+        }
+        .demo-request-page .demo-request-form input[type="text"],
+        .demo-request-page .demo-request-form input[type="email"],
+        .demo-request-page .demo-request-form input[type="tel"],
+        .demo-request-page .demo-request-form select,
+        .demo-request-page .demo-request-form textarea {
+            width: 100% !important;
+            padding: 0.75rem 1rem !important;
+            border: 1px solid #d1d5db !important;
+            border-radius: 0.375rem !important;
+            font-size: 0.875rem !important;
+            background: #f9fafb !important;
+            box-sizing: border-box !important;
+        }
+        .demo-request-page .demo-request-form input:focus,
+        .demo-request-page .demo-request-form select:focus,
+        .demo-request-page .demo-request-form textarea:focus {
+            outline: none !important;
+            border-color: #6bb96b !important;
+            box-shadow: 0 0 0 3px rgba(107, 185, 107, 0.1) !important;
+            background: white !important;
+        }
+        .demo-request-page .demo-request-form select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E") !important;
+            background-repeat: no-repeat !important;
+            background-position: right 0.75rem center !important;
+            background-size: 1.25rem !important;
+            padding-right: 2.5rem !important;
+        }
+    </style>
+    <script>
+        lucide.createIcons();
+        
+        function handleDemoSubmit(event) {
+            event.preventDefault();
+
+            // Get form data
+            const formData = new FormData(event.target);
+            const data = {};
+
+            // Process form fields
+            for (let [key, value] of formData.entries()) {
+                if (key === 'interests') {
+                    if (!data[key]) data[key] = [];
+                    data[key].push(value);
+                } else {
+                    data[key] = value;
+                }
+            }
+
+            // Show success message
+            alert('Thank you for your interest! We will contact you within 24 hours to schedule your personalized demo.');
+
+            // Log data (for future backend integration)
+            console.log('Demo request data:', data);
+
+            // Redirect back to home
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
