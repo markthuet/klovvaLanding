@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     lucide.createIcons();
 });
 
+
 // Mobile menu functionality
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
