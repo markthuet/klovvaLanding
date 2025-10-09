@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Sales - Klovva</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="klovva.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="klovva.png">
+    <link rel="apple-touch-icon" href="klovva.png">
+
     <link rel="stylesheet" href="styles.css?v=2">
     <link rel="stylesheet" href="demo-request.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="firebase-config.js"></script>
 </head>
 <body>
     <!-- Demo Request Form Page -->
@@ -205,32 +216,54 @@
     </style>
     <script>
         lucide.createIcons();
-        
-        function handleDemoSubmit(event) {
+
+        async function handleDemoSubmit(event) {
             event.preventDefault();
 
-            // Get form data
-            const formData = new FormData(event.target);
-            const data = {};
+            // Disable submit button to prevent double submission
+            const submitBtn = event.target.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Sending...';
 
-            // Process form fields
-            for (let [key, value] of formData.entries()) {
-                if (key === 'interests') {
-                    if (!data[key]) data[key] = [];
-                    data[key].push(value);
-                } else {
-                    data[key] = value;
+            try {
+                // Get form data
+                const formData = new FormData(event.target);
+                const data = {
+                    timestamp: new Date().toISOString(),
+                    submittedAt: firebase.firestore.FieldValue.serverTimestamp()
+                };
+
+                // Process form fields
+                for (let [key, value] of formData.entries()) {
+                    if (key === 'interests') {
+                        if (!data[key]) data[key] = [];
+                        data[key].push(value);
+                    } else {
+                        data[key] = value;
+                    }
                 }
+
+                // Save to Firestore
+                await db.collection('demo-requests').add(data);
+
+                // Show success message
+                alert('Thank you for your interest! We will contact you within 24 hours to schedule your personalized demo.');
+
+                // Log data for debugging
+                console.log('Demo request saved:', data);
+
+                // Redirect back to home
+                window.location.href = 'index.html';
+
+            } catch (error) {
+                console.error('Error saving demo request:', error);
+                alert('There was an error submitting your request. Please try again or contact us directly at sales@klovva.com');
+
+                // Re-enable submit button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalText;
             }
-
-            // Show success message
-            alert('Thank you for your interest! We will contact you within 24 hours to schedule your personalized demo.');
-
-            // Log data (for future backend integration)
-            console.log('Demo request data:', data);
-
-            // Redirect back to home
-            window.location.href = 'index.html';
         }
     </script>
 </body>
