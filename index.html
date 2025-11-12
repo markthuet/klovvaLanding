@@ -22,7 +22,7 @@
                 <div class="brand-icon">
                     <img src="klovva.png" alt="Klovva" class="logo-image">
                 </div>
-                <span class="brand-name">Klovva.</span>
+                <span class="brand-name">klovva.</span>
             </div>
 
             <!-- Desktop Navigation -->
@@ -30,7 +30,7 @@
                 <a href="#home" onclick="showLanding(); return false;">Home</a>
                 <a href="#features" onclick="showLanding(); setTimeout(() => document.getElementById('features').scrollIntoView({behavior: 'smooth'}), 100); return false;">Features</a>
                 <a href="#demo" onclick="showDemo(); return false;">Demo</a>
-                <a href="#pricing" onclick="showLanding(); setTimeout(() => document.getElementById('pricing').scrollIntoView({behavior: 'smooth'}), 100); return false;">Pricing</a>
+                <a href="#pricing" onclick="showLanding(); setTimeout(() => document.getElementById('pricing').scrollIntoView({behavior: 'smooth'}), 100); return false;">Solutions</a>
             </div>
 
             <div class="nav-actions desktop-nav">
@@ -48,7 +48,7 @@
             <a href="#home" onclick="showLanding(); return false;">Home</a>
             <a href="#features" onclick="showLanding(); setTimeout(() => document.getElementById('features').scrollIntoView({behavior: 'smooth'}), 100); return false;">Features</a>
             <a href="#demo" onclick="showDemo(); return false;">Demo</a>
-            <a href="#pricing" onclick="showLanding(); setTimeout(() => document.getElementById('pricing').scrollIntoView({behavior: 'smooth'}), 100); return false;">Pricing</a>
+            <a href="#pricing" onclick="showLanding(); setTimeout(() => document.getElementById('pricing').scrollIntoView({behavior: 'smooth'}), 100); return false;">Solutions</a>
             <div class="mobile-nav-actions">
                 <button class="btn btn-primary" onclick="showSignIn()">Sign In</button>
             </div>
@@ -142,101 +142,38 @@
         </div>
     </section>
 
-    <!-- Demo Section -->
-    <section id="demo" class="demo">
-        <div class="container">
-            <div class="demo-content">
-                <div class="demo-text">
-                    <h2>See Klovva in Action</h2>
-                    <p>Experience the power of AI-driven legislative management with our interactive demo</p>
-
-                    <div class="demo-features">
-                        <div class="demo-feature">
-                            <div class="demo-feature-icon">
-                                <i data-lucide="check"></i>
-                            </div>
-                            <div>
-                                <h4>Intelligent Bill Analysis</h4>
-                                <p>Automatically categorize and prioritize bills based on client interests and impact potential</p>
-                            </div>
-                        </div>
-
-                        <div class="demo-feature">
-                            <div class="demo-feature-icon">
-                                <i data-lucide="check"></i>
-                            </div>
-                            <div>
-                                <h4>Real-time Collaboration</h4>
-                                <p>Keep your team synchronized with shared dashboards and instant notifications</p>
-                            </div>
-                        </div>
-
-                        <div class="demo-feature">
-                            <div class="demo-feature-icon">
-                                <i data-lucide="check"></i>
-                            </div>
-                            <div>
-                                <h4>Predictive Insights</h4>
-                                <p>Leverage AI to forecast legislative outcomes and optimize your consulting strategy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="demo-video">
-                    <div class="demo-placeholder">
-                        <i data-lucide="play-circle"></i>
-                        <span>Interactive Demo</span>
-                    </div>
-                    <button class="btn btn-primary demo-btn" onclick="showDemo()">
-                        <i data-lucide="play"></i>
-                        Try Live Demo
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
+    <!-- Solutions Section -->
     <section id="pricing" class="pricing">
         <div class="container">
             <div class="section-header">
-                <h2>Choose Your Plan</h2>
-                <p>Flexible pricing options designed to scale with your businesses needs</p>
+                <h2>Solutions Tailored to Your Needs</h2>
+                <p>Custom pricing designed to match your firm size, usage, and specific requirements</p>
             </div>
 
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3>Starter</h3>
-                    <div class="price">
-                        <span class="price-amount">$99</span>
-                        <span class="price-period">per month</span>
-                    </div>
-                    <p class="pricing-description">Perfect for small firms and solo practitioners</p>
+                    <h3>Small Firms</h3>
+                    <p class="pricing-description">Perfect for solo practitioners and small teams just getting started</p>
 
                     <ul class="pricing-features">
-                        <li><i data-lucide="check"></i> Up to 50 bills tracked</li>
-                        <li><i data-lucide="check"></i> 5 client profiles</li>
+                        <li><i data-lucide="check"></i> Essential bill tracking</li>
+                        <li><i data-lucide="check"></i> Core client management</li>
                         <li><i data-lucide="check"></i> Basic AI insights</li>
                         <li><i data-lucide="check"></i> Email support</li>
-                        <li><i data-lucide="check"></i> Monthly reports</li>
+                        <li><i data-lucide="check"></i> Standard reporting</li>
                     </ul>
 
-                    <button class="btn btn-outline btn-full" onclick="window.location.href='demo-request.html'">Get Started</button>
+                    <button class="btn btn-outline btn-full" onclick="window.location.href='demo-request.html'">Get Custom Quote</button>
                 </div>
 
                 <div class="pricing-card pricing-card-popular">
                     <div class="popular-badge">Most Popular</div>
-                    <h3>Professional</h3>
-                    <div class="price">
-                        <span class="price-amount">$299</span>
-                        <span class="price-period">per month</span>
-                    </div>
-                    <p class="pricing-description">Ideal for growing firms with multiple clients and campaigns</p>
+                    <h3>Growing Firms</h3>
+                    <p class="pricing-description">Ideal for established firms managing multiple clients and campaigns</p>
 
                     <ul class="pricing-features">
                         <li><i data-lucide="check"></i> Unlimited bill tracking</li>
-                        <li><i data-lucide="check"></i> 25 client profiles</li>
+                        <li><i data-lucide="check"></i> Advanced client portfolios</li>
                         <li><i data-lucide="check"></i> Advanced AI analytics</li>
                         <li><i data-lucide="check"></i> Priority support</li>
                         <li><i data-lucide="check"></i> Custom reporting</li>
@@ -244,28 +181,24 @@
                         <li><i data-lucide="check"></i> API access</li>
                     </ul>
 
-                    <button class="btn btn-primary btn-full" onclick="window.location.href='demo-request.html'">Get Started</button>
+                    <button class="btn btn-primary btn-full" onclick="window.location.href='demo-request.html'">Schedule Consultation</button>
                 </div>
 
                 <div class="pricing-card">
                     <h3>Enterprise</h3>
-                    <div class="price">
-                        <span class="price-amount">Custom</span>
-                        <span class="price-period">pricing</span>
-                    </div>
-                    <p class="pricing-description">Tailored solutions for large organizations and government affairs teams</p>
+                    <p class="pricing-description">Comprehensive solutions for large organizations and government affairs teams</p>
 
                     <ul class="pricing-features">
-                        <li><i data-lucide="check"></i> Everything in Professional</li>
-                        <li><i data-lucide="check"></i> Unlimited clients</li>
+                        <li><i data-lucide="check"></i> Everything in Growing Firms</li>
+                        <li><i data-lucide="check"></i> Unlimited clients & users</li>
                         <li><i data-lucide="check"></i> Custom integrations</li>
-                        <li><i data-lucide="check"></i> Dedicated support</li>
-                        <li><i data-lucide="check"></i> Advanced security</li>
-                        <li><i data-lucide="check"></i> Training & onboarding</li>
+                        <li><i data-lucide="check"></i> Dedicated account manager</li>
+                        <li><i data-lucide="check"></i> Advanced security & compliance</li>
+                        <li><i data-lucide="check"></i> White-glove onboarding</li>
                         <li><i data-lucide="check"></i> SLA guarantee</li>
                     </ul>
 
-                    <button class="btn btn-outline btn-full" onclick="showSignIn()">Contact Sales</button>
+                    <button class="btn btn-outline btn-full" onclick="window.location.href='demo-request.html'">Contact Sales</button>
                 </div>
             </div>
         </div>
@@ -304,7 +237,7 @@
                     <h4>Product</h4>
                     <ul>
                         <li><a href="#features" onclick="showLanding(); setTimeout(() => document.getElementById('features').scrollIntoView({behavior: 'smooth'}), 100); return false;">Features</a></li>
-                        <li><a href="#pricing" onclick="showLanding(); setTimeout(() => document.getElementById('pricing').scrollIntoView({behavior: 'smooth'}), 100); return false;">Pricing</a></li>
+                        <li><a href="#pricing" onclick="showLanding(); setTimeout(() => document.getElementById('pricing').scrollIntoView({behavior: 'smooth'}), 100); return false;">Solutions</a></li>
                         <li><a href="#demo" onclick="showDemo(); return false;">Demo</a></li>
                         <li><a href="#">Integrations</a></li>
                     </ul>
