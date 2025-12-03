@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -28,9 +30,10 @@
             <!-- Desktop Navigation -->
             <div class="nav-links desktop-nav">
                 <a href="#home" onclick="showLanding(); return false;">Home</a>
-                <a href="#features" onclick="showLanding(); setTimeout(() => document.getElementById('features').scrollIntoView({behavior: 'smooth'}), 100); return false;">Features</a>
-                <a href="#demo" onclick="showDemo(); return false;">Demo</a>
-                <a href="#pricing" onclick="showLanding(); setTimeout(() => document.getElementById('pricing').scrollIntoView({behavior: 'smooth'}), 100); return false;">Solutions</a>
+                <a href="#features"
+                    onclick="showLanding(); setTimeout(() => document.getElementById('features').scrollIntoView({behavior: 'smooth'}), 100); return false;">Features</a>
+                <a href="#pricing"
+                    onclick="showLanding(); setTimeout(() => document.getElementById('pricing').scrollIntoView({behavior: 'smooth'}), 100); return false;">Solutions</a>
             </div>
 
             <div class="nav-actions desktop-nav">
@@ -46,9 +49,10 @@
         <!-- Mobile Navigation -->
         <div class="mobile-nav" id="mobileNav">
             <a href="#home" onclick="showLanding(); return false;">Home</a>
-            <a href="#features" onclick="showLanding(); setTimeout(() => document.getElementById('features').scrollIntoView({behavior: 'smooth'}), 100); return false;">Features</a>
-            <a href="#demo" onclick="showDemo(); return false;">Demo</a>
-            <a href="#pricing" onclick="showLanding(); setTimeout(() => document.getElementById('pricing').scrollIntoView({behavior: 'smooth'}), 100); return false;">Solutions</a>
+            <a href="#features"
+                onclick="showLanding(); setTimeout(() => document.getElementById('features').scrollIntoView({behavior: 'smooth'}), 100); return false;">Features</a>
+            <a href="#pricing"
+                onclick="showLanding(); setTimeout(() => document.getElementById('pricing').scrollIntoView({behavior: 'smooth'}), 100); return false;">Solutions</a>
             <div class="mobile-nav-actions">
                 <button class="btn btn-primary" onclick="window.location.href='https://app.klovva.com'">Sign In</button>
             </div>
@@ -59,221 +63,236 @@
     <div id="landing-page" class="landing-page">
         <!-- Hero Section -->
         <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    AI-Powered Arizona Bill Tracking
-                    <span class="hero-subtitle">Collaboration Platform</span>
-                </h1>
-                <p class="hero-description">
-                    All the tools Arizona lobbyists and advocates need to manage legislative work efficiently and effectively.
-                </p>
-                <div class="hero-actions">
-                    <button class="btn btn-primary btn-large" onclick="window.location.href='demo-request.html'">
-                        Get Started
-                        <i data-lucide="arrow-right"></i>
-                    </button>
-                    <button class="btn btn-outline btn-large" onclick="showDemo()">
-                        <i data-lucide="play"></i>
-                        Watch Demo
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Essential Tools for Legislative Success  </h2>
-                <p>Everything you need to manage your legislative advocacy efficiently and effectively</p>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon feature-icon-blue">
-                        <i data-lucide="bar-chart-3"></i>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        AI-Powered Arizona Bill Tracking
+                        <span class="hero-subtitle">Collaboration Platform</span>
+                    </h1>
+                    <p class="hero-description">
+                        All the tools Arizona lobbyists and advocates need to manage legislative work efficiently and
+                        effectively.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-large" onclick="window.location.href='demo-request.html'">
+                            Get Started
+                            <i data-lucide="arrow-right"></i>
+                        </button>
                     </div>
-                    <h3>Real-time Bill Tracking</h3>
-                    <p>Monitor legislative progress with automated updates and intelligent alerts for bills that matter to your clients.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon feature-icon-green">
-                        <i data-lucide="users"></i>
-                    </div>
-                    <h3>Client Management</h3>
-                    <p>Organize client portfolios, track engagement history, and manage relationships with powerful CRM tools.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon feature-icon-purple">
-                        <i data-lucide="bot"></i>
-                    </div>
-                    <h3>AI Legislative Assistant</h3>
-                    <p>Get intelligent insights, strategic recommendations, and automated analysis of legislative trends and opportunities.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon feature-icon-orange">
-                        <i data-lucide="building-2"></i>
-                    </div>
-                    <h3>Legislator Database</h3>
-                    <p>Access comprehensive profiles, voting records, and contact information for all legislators and key stakeholders.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon feature-icon-red">
-                        <i data-lucide="trending-up"></i>
-                    </div>
-                    <h3>Analytics & Reporting</h3>
-                    <p>Track success metrics, generate client reports, and analyze effectiveness with detailed dashboards.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon feature-icon-teal">
-                        <i data-lucide="target"></i>
-                    </div>
-                    <h3>Strategic Planning</h3>
-                    <p>Plan campaigns, set priorities, and coordinate team efforts with integrated project management tools.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Solutions Section -->
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2>Solutions Tailored to Your Needs</h2>
-                <p>Custom pricing designed to match your firm size, usage, and specific requirements</p>
-            </div>
-
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Small Firms</h3>
-                    <p class="pricing-description">Perfect for solo practitioners and small teams just getting started</p>
-
-                    <ul class="pricing-features">
-                        <li><i data-lucide="check"></i> Essential bill tracking</li>
-                        <li><i data-lucide="check"></i> Core client management</li>
-                        <li><i data-lucide="check"></i> Basic AI insights</li>
-                        <li><i data-lucide="check"></i> Email support</li>
-                        <li><i data-lucide="check"></i> Standard reporting</li>
-                    </ul>
-
-                    <button class="btn btn-outline btn-full" onclick="window.location.href='demo-request.html'">Get Custom Quote</button>
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Essential Tools for Legislative Success </h2>
+                    <p>Everything you need to manage your legislative advocacy efficiently and effectively</p>
                 </div>
 
-                <div class="pricing-card pricing-card-popular">
-                    <div class="popular-badge">Most Popular</div>
-                    <h3>Growing Firms</h3>
-                    <p class="pricing-description">Ideal for established firms managing multiple clients and campaigns</p>
-
-                    <ul class="pricing-features">
-                        <li><i data-lucide="check"></i> Unlimited bill tracking</li>
-                        <li><i data-lucide="check"></i> Advanced client portfolios</li>
-                        <li><i data-lucide="check"></i> Advanced AI analytics</li>
-                        <li><i data-lucide="check"></i> Priority support</li>
-                        <li><i data-lucide="check"></i> Custom reporting</li>
-                        <li><i data-lucide="check"></i> Team collaboration</li>
-                        <li><i data-lucide="check"></i> API access</li>
-                    </ul>
-
-                    <button class="btn btn-primary btn-full" onclick="window.location.href='demo-request.html'">Schedule Consultation</button>
-                </div>
-
-                <div class="pricing-card">
-                    <h3>Enterprise</h3>
-                    <p class="pricing-description">Comprehensive solutions for large organizations and government affairs teams</p>
-
-                    <ul class="pricing-features">
-                        <li><i data-lucide="check"></i> Everything in Growing Firms</li>
-                        <li><i data-lucide="check"></i> Unlimited clients & users</li>
-                        <li><i data-lucide="check"></i> Custom integrations</li>
-                        <li><i data-lucide="check"></i> Dedicated account manager</li>
-                        <li><i data-lucide="check"></i> Advanced security & compliance</li>
-                        <li><i data-lucide="check"></i> White-glove onboarding</li>
-                        <li><i data-lucide="check"></i> SLA guarantee</li>
-                    </ul>
-
-                    <button class="btn btn-outline btn-full" onclick="window.location.href='demo-request.html'">Contact Sales</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Transform Your Firms Legislative Process</h2>
-                <p>Join hundreds of Arizona professionals using Klovva to drive better outcomes for their clients</p>
-                <div class="cta-actions">
-                    <button class="btn btn-primary btn-large" onclick="window.location.href='demo-request.html'">
-                        Get Started
-                        <i data-lucide="arrow-right"></i>
-                    </button>
-                    <button class="btn btn-outline btn-large" onclick="window.location.href='demo-request.html'">Schedule Demo</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="brand-icon">
-                        <img src="klovva.png" alt="Klovva" class="logo-image">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon feature-icon-blue">
+                            <i data-lucide="bar-chart-3"></i>
+                        </div>
+                        <h3>Real-time Bill Tracking</h3>
+                        <p>Monitor legislative progress with automated updates and intelligent alerts for bills that
+                            matter to your clients.</p>
                     </div>
-                    <span class="brand-name">Klovva</span>
-                    <p>AI-powered Bill Tracking and collaboration platform for modern government affairs professionals</p>
-                </div>
 
-                <div class="footer-section">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#features" onclick="showLanding(); setTimeout(() => document.getElementById('features').scrollIntoView({behavior: 'smooth'}), 100); return false;">Features</a></li>
-                        <li><a href="#pricing" onclick="showLanding(); setTimeout(() => document.getElementById('pricing').scrollIntoView({behavior: 'smooth'}), 100); return false;">Solutions</a></li>
-                        <li><a href="#demo" onclick="showDemo(); return false;">Demo</a></li>
-                        <li><a href="#">Integrations</a></li>
-                    </ul>
-                </div>
+                    <div class="feature-card">
+                        <div class="feature-icon feature-icon-green">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h3>Client Management</h3>
+                        <p>Organize client portfolios, track engagement history, and manage relationships with powerful
+                            CRM tools.</p>
+                    </div>
 
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+                    <div class="feature-card">
+                        <div class="feature-icon feature-icon-purple">
+                            <i data-lucide="bot"></i>
+                        </div>
+                        <h3>AI Legislative Assistant</h3>
+                        <p>Get intelligent insights, strategic recommendations, and automated analysis of legislative
+                            trends and opportunities.</p>
+                    </div>
 
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Training</a></li>
-                        <li><a href="#">Status</a></li>
-                    </ul>
+                    <div class="feature-card">
+                        <div class="feature-icon feature-icon-orange">
+                            <i data-lucide="building-2"></i>
+                        </div>
+                        <h3>Legislator Database</h3>
+                        <p>Access comprehensive profiles, voting records, and contact information for all legislators
+                            and key stakeholders.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon feature-icon-red">
+                            <i data-lucide="trending-up"></i>
+                        </div>
+                        <h3>Analytics & Reporting</h3>
+                        <p>Track success metrics, generate client reports, and analyze effectiveness with detailed
+                            dashboards.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon feature-icon-teal">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <h3>Strategic Planning</h3>
+                        <p>Plan campaigns, set priorities, and coordinate team efforts with integrated project
+                            management tools.</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="footer-bottom">
-                <p>&copy; 2025 Klovva. All rights reserved.</p>
-                <div class="footer-social">
-                    <a href="#"><i data-lucide="twitter"></i></a>
-                    <a href="#"><i data-lucide="linkedin"></i></a>
-                    <a href="#"><i data-lucide="globe"></i></a>
+        <!-- Solutions Section -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Solutions Tailored to Your Needs</h2>
+                    <p>Custom pricing designed to match your firm size, usage, and specific requirements</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Small Firms</h3>
+                        <p class="pricing-description">Perfect for solo practitioners and small teams just getting
+                            started</p>
+
+                        <ul class="pricing-features">
+                            <li><i data-lucide="check"></i> Essential bill tracking</li>
+                            <li><i data-lucide="check"></i> Core client management</li>
+                            <li><i data-lucide="check"></i> Basic AI insights</li>
+                            <li><i data-lucide="check"></i> Email support</li>
+                            <li><i data-lucide="check"></i> Standard reporting</li>
+                        </ul>
+
+                        <button class="btn btn-outline btn-full" onclick="window.location.href='demo-request.html'">Get
+                            Custom Quote</button>
+                    </div>
+
+                    <div class="pricing-card pricing-card-popular">
+                        <div class="popular-badge">Most Popular</div>
+                        <h3>Growing Firms</h3>
+                        <p class="pricing-description">Ideal for established firms managing multiple clients and
+                            campaigns</p>
+
+                        <ul class="pricing-features">
+                            <li><i data-lucide="check"></i> Unlimited bill tracking</li>
+                            <li><i data-lucide="check"></i> Advanced client portfolios</li>
+                            <li><i data-lucide="check"></i> Advanced AI analytics</li>
+                            <li><i data-lucide="check"></i> Priority support</li>
+                            <li><i data-lucide="check"></i> Custom reporting</li>
+                            <li><i data-lucide="check"></i> Team collaboration</li>
+                            <li><i data-lucide="check"></i> API access</li>
+                        </ul>
+
+                        <button class="btn btn-primary btn-full"
+                            onclick="window.location.href='demo-request.html'">Schedule Consultation</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Enterprise</h3>
+                        <p class="pricing-description">Comprehensive solutions for large organizations and government
+                            affairs teams</p>
+
+                        <ul class="pricing-features">
+                            <li><i data-lucide="check"></i> Everything in Growing Firms</li>
+                            <li><i data-lucide="check"></i> Unlimited clients & users</li>
+                            <li><i data-lucide="check"></i> Custom integrations</li>
+                            <li><i data-lucide="check"></i> Dedicated account manager</li>
+                            <li><i data-lucide="check"></i> Advanced security & compliance</li>
+                            <li><i data-lucide="check"></i> White-glove onboarding</li>
+                            <li><i data-lucide="check"></i> SLA guarantee</li>
+                        </ul>
+
+                        <button class="btn btn-outline btn-full"
+                            onclick="window.location.href='demo-request.html'">Contact Sales</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Firms Legislative Process</h2>
+                    <p>Join hundreds of Arizona professionals using Klovva to drive better outcomes for their clients
+                    </p>
+                    <div class="cta-actions">
+                        <button class="btn btn-primary btn-large" onclick="window.location.href='demo-request.html'">
+                            Get Started
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                        <button class="btn btn-outline btn-large"
+                            onclick="window.location.href='demo-request.html'">Schedule Demo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="brand-icon">
+                            <img src="klovva.png" alt="Klovva" class="logo-image">
+                        </div>
+                        <span class="brand-name">Klovva</span>
+                        <p>AI-powered Bill Tracking and collaboration platform for modern government affairs
+                            professionals</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features"
+                                    onclick="showLanding(); setTimeout(() => document.getElementById('features').scrollIntoView({behavior: 'smooth'}), 100); return false;">Features</a>
+                            </li>
+                            <li><a href="#pricing"
+                                    onclick="showLanding(); setTimeout(() => document.getElementById('pricing').scrollIntoView({behavior: 'smooth'}), 100); return false;">Solutions</a>
+                            </li>
+                            <li><a href="#">Integrations</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Training</a></li>
+                            <li><a href="#">Status</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Klovva. All rights reserved.</p>
+                    <div class="footer-social">
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="linkedin"></i></a>
+                        <a href="#"><i data-lucide="globe"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <!-- App Interface (Hidden by default) -->
@@ -474,7 +493,8 @@
                                 </div>
                             </div>
                             <h4>Improve Broadband Access Act</h4>
-                            <p>Provides funding for rural broadband expansion and incentivizes public-private partnerships...</p>
+                            <p>Provides funding for rural broadband expansion and incentivizes public-private
+                                partnerships...</p>
                             <div class="bill-progress">
                                 <div class="progress-bar">
                                     <div class="progress-fill" style="width: 65%"></div>
@@ -501,7 +521,8 @@
                                 </div>
                             </div>
                             <h4>Workforce Training Tax Credit</h4>
-                            <p>Establishes a tax credit for businesses that provide accredited workforce training programs...</p>
+                            <p>Establishes a tax credit for businesses that provide accredited workforce training
+                                programs...</p>
                             <div class="bill-progress">
                                 <div class="progress-bar">
                                     <div class="progress-fill" style="width: 30%"></div>
@@ -565,14 +586,17 @@
                                         <i data-lucide="bot"></i>
                                     </div>
                                     <div class="message-content">
-                                        <p>Hello! I'm your AI legislative assistant. I can help you analyze bills, identify trends, suggest strategies, and answer questions about your legislative portfolio. How can I assist you today?</p>
+                                        <p>Hello! I'm your AI legislative assistant. I can help you analyze bills,
+                                            identify trends, suggest strategies, and answer questions about your
+                                            legislative portfolio. How can I assist you today?</p>
                                         <span class="message-time">Just now</span>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="chat-input">
-                                <input type="text" placeholder="Ask me about your bills, lists, or lobbying strategy..." id="aiInput">
+                                <input type="text" placeholder="Ask me about your bills, lists, or lobbying strategy..."
+                                    id="aiInput">
                                 <button class="btn btn-primary">
                                     <i data-lucide="send"></i>
                                 </button>
@@ -652,7 +676,8 @@
 
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password" required placeholder="Enter your password">
+                            <input type="password" id="password" name="password" required
+                                placeholder="Enter your password">
                         </div>
 
                         <div class="form-options">
@@ -671,15 +696,10 @@
                         <div class="signin-divider">
                             <span>or</span>
                         </div>
-
-                        <button type="button" class="btn btn-outline btn-full" onclick="showDemo()">
-                            <i data-lucide="play"></i>
-                            Try Demo Instead
-                        </button>
                     </form>
 
                     <div class="signin-footer">
-                        <p>Don't have an account? <a href="#" onclick="showDemo()">Try our demo</a></p>
+                        <p>Don't have an account? <a href="demo-request.html">Contact Sales</a></p>
                     </div>
                 </div>
 
@@ -717,1269 +737,1195 @@
                 </div>
             </div>
         </div>
+        <h4>HB 101</h4>
+        <p>Improve Broadband Access Act</p>
+    </div>
+    <div class="bill-badges">
+        <span class="status-badge active">Active</span>
+    </div>
+    </div>
+    <div class="bill-progress">
+        <div class="progress-info">
+            <span class="progress-label">Progress: 65%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 65%"></div>
+        </div>
+    </div>
     </div>
 
-    <!-- Demo Page (Hidden by default) -->
-    <div id="demo-page" class="demo-page hidden">
-        <!-- Demo Header -->
-        <div class="demo-header">
-            <div class="demo-nav">
-                <div class="demo-brand">
-                    <div class="brand-icon">
-                        <img src="klovva.png" alt="Klovva" class="logo-image">
-                    </div>
-                    <div class="brand-content">
-                        <span class="brand-name">Klovva</span>
-                        <p class="brand-tagline">AI-Powered Bill Tracking and Collaboration</p>
-                    </div>
+    <div class="bill-card">
+        <div class="bill-header">
+            <div class="bill-info">
+                <h4>HB 205</h4>
+                <p>Clean Energy Infrastructure Investment</p>
+            </div>
+            <div class="bill-badges">
+                <span class="status-badge completed">Completed</span>
+            </div>
+        </div>
+        <div class="bill-progress">
+            <div class="progress-info">
+                <span class="progress-label">Progress: 100%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bill-card">
+        <div class="bill-header">
+            <div class="bill-info">
+                <h4>SB 89</h4>
+                <p>Healthcare Access Expansion</p>
+            </div>
+            <div class="bill-badges">
+                <span class="status-badge active">Active</span>
+            </div>
+        </div>
+        <div class="bill-progress">
+            <div class="progress-info">
+                <span class="progress-label">Progress: 45%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 45%"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Upcoming Tasks -->
+    <div class="dashboard-section">
+        <h3 class="section-title">Upcoming Tasks</h3>
+        <div class="tasks-container">
+            <div class="task-card">
+                <div class="task-header">
+                    <h4 class="task-title">Schedule meeting with Rep. Smith</h4>
+                    <span class="priority-badge high">High</span>
                 </div>
-                <div class="demo-nav-actions">
-                    <button class="btn btn-outline btn-sm" onclick="showLanding()">
-                        Back to Home
-                    </button>
-                    <button class="btn btn-outline btn-sm">
-                        <i data-lucide="bell"></i>
-                        Notifications
-                    </button>
-                    <button class="btn btn-outline btn-sm">
-                        <i data-lucide="settings"></i>
-                        Settings
+                <p class="task-description">Discuss HB 101 amendments and timeline</p>
+                <div class="task-date">
+                    <i data-lucide="calendar"></i>
+                    <span>Jan 24, 2025</span>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <h4 class="task-title">Prepare committee testimony</h4>
+                    <span class="priority-badge high">High</span>
+                </div>
+                <p class="task-description">Draft testimony for Healthcare Access Expansion bill</p>
+                <div class="task-date">
+                    <i data-lucide="calendar"></i>
+                    <span>Jan 29, 2025</span>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <h4 class="task-title">Client update report</h4>
+                    <span class="priority-badge medium">Medium</span>
+                </div>
+                <p class="task-description">Weekly progress report for TechCorp Industries</p>
+                <div class="task-date">
+                    <i data-lucide="calendar"></i>
+                    <span>Jan 21, 2025</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Bills Tab -->
+    <div id="demo-bills" class="demo-content">
+        <!-- Search and Filter Bar -->
+        <div class="bills-filter-section">
+            <div class="bills-search-bar">
+                <div class="search-input-container">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" placeholder="Search bills..." class="bills-search-input">
+                </div>
+                <div class="filter-controls">
+                    <select class="filter-select">
+                        <option>All Status</option>
+                        <option>Active</option>
+                        <option>Monitoring</option>
+                        <option>Completed</option>
+                        <option>Paused</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>All Priority</option>
+                        <option>High</option>
+                        <option>Medium</option>
+                        <option>Low</option>
+                    </select>
+                    <button class="filter-btn">
+                        <i data-lucide="filter"></i>
+                        Filter
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Demo Tabs -->
-        <div class="demo-tabs">
-            <button class="demo-tab active" data-tab="demo-dashboard">Dashboard</button>
-            <button class="demo-tab" data-tab="demo-bills">Bills</button>
-            <button class="demo-tab" data-tab="demo-clients">Lists</button>
-            <button class="demo-tab" data-tab="demo-legislators">Legislators</button>
-            <button class="demo-tab" data-tab="demo-ai-assistant">AI Assistant</button>
-            <button class="demo-tab" data-tab="demo-tasks">Tasks</button>
+        <!-- Bills Grid -->
+        <div class="bills-grid">
+            <!-- Bill Card 1 -->
+            <div class="bill-detail-card">
+                <div class="bill-detail-header">
+                    <div class="bill-number-section">
+                        <h3 class="bill-number">HB 101</h3>
+                        <h4 class="bill-full-title">Improve Broadband Access Act</h4>
+                    </div>
+                    <div class="bill-status-badges">
+                        <span class="priority-badge high">High</span>
+                        <span class="status-badge active">Active</span>
+                    </div>
+                </div>
+
+                <p class="bill-description">Provides funding for rural broadband expansion and incentivizes
+                    public-private partnerships to extend high-speed internet into underserved communities.</p>
+
+                <div class="bill-progress-section">
+                    <div class="progress-header">
+                        <span class="progress-text">Progress</span>
+                        <span class="progress-percentage">65%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 65%"></div>
+                    </div>
+                </div>
+
+                <div class="bill-meta-info">
+                    <div class="bill-assignee">
+                        <i data-lucide="user" class="meta-icon"></i>
+                        <span>Sarah Johnson</span>
+                    </div>
+                    <div class="bill-date">
+                        <i data-lucide="clock" class="meta-icon"></i>
+                        <span>Jan 24, 2025</span>
+                    </div>
+                </div>
+
+                <div class="bill-actions">
+                    <button class="action-btn primary">View Details</button>
+                    <button class="action-btn secondary">
+                        <i data-lucide="message-square"></i>
+                    </button>
+                    <button class="action-btn secondary">
+                        <i data-lucide="share"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bill Card 2 -->
+            <div class="bill-detail-card">
+                <div class="bill-detail-header">
+                    <div class="bill-number-section">
+                        <h3 class="bill-number">SB 57</h3>
+                        <h4 class="bill-full-title">Workforce Training Tax Credit</h4>
+                    </div>
+                    <div class="bill-status-badges">
+                        <span class="priority-badge medium">Medium</span>
+                        <span class="status-badge monitoring">Monitoring</span>
+                    </div>
+                </div>
+
+                <p class="bill-description">Establishes a tax credit for businesses that provide accredited
+                    workforce training programs.</p>
+
+                <div class="bill-progress-section">
+                    <div class="progress-header">
+                        <span class="progress-text">Progress</span>
+                        <span class="progress-percentage">30%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 30%"></div>
+                    </div>
+                </div>
+
+                <div class="bill-meta-info">
+                    <div class="bill-assignee">
+                        <i data-lucide="user" class="meta-icon"></i>
+                        <span>Michael Chen</span>
+                    </div>
+                </div>
+
+                <div class="bill-actions">
+                    <button class="action-btn primary">View Details</button>
+                    <button class="action-btn secondary">
+                        <i data-lucide="message-square"></i>
+                    </button>
+                    <button class="action-btn secondary">
+                        <i data-lucide="share"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bill Card 3 -->
+            <div class="bill-detail-card">
+                <div class="bill-detail-header">
+                    <div class="bill-number-section">
+                        <h3 class="bill-number">HB 205</h3>
+                        <h4 class="bill-full-title">Clean Energy Infrastructure Investment</h4>
+                    </div>
+                    <div class="bill-status-badges">
+                        <span class="priority-badge high">High</span>
+                        <span class="status-badge completed">Completed</span>
+                    </div>
+                </div>
+
+                <p class="bill-description">Authorizes state investment in renewable energy infrastructure projects
+                    and creates green job training programs.</p>
+
+                <div class="bill-progress-section">
+                    <div class="progress-header">
+                        <span class="progress-text">Progress</span>
+                        <span class="progress-percentage">100%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div class="bill-meta-info">
+                    <div class="bill-assignee">
+                        <i data-lucide="user" class="meta-icon"></i>
+                        <span>David Park</span>
+                    </div>
+                </div>
+
+                <div class="bill-actions">
+                    <button class="action-btn primary">View Details</button>
+                    <button class="action-btn secondary">
+                        <i data-lucide="message-square"></i>
+                    </button>
+                    <button class="action-btn secondary">
+                        <i data-lucide="share"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bill Card 4 -->
+            <div class="bill-detail-card">
+                <div class="bill-detail-header">
+                    <div class="bill-number-section">
+                        <h3 class="bill-number">SB 89</h3>
+                        <h4 class="bill-full-title">Healthcare Access Expansion</h4>
+                    </div>
+                    <div class="bill-status-badges">
+                        <span class="priority-badge high">High</span>
+                        <span class="status-badge active">Active</span>
+                    </div>
+                </div>
+
+                <p class="bill-description">Expands healthcare coverage options for small businesses and independent
+                    contractors.</p>
+
+                <div class="bill-progress-section">
+                    <div class="progress-header">
+                        <span class="progress-text">Progress</span>
+                        <span class="progress-percentage">45%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 45%"></div>
+                    </div>
+                </div>
+
+                <div class="bill-meta-info">
+                    <div class="bill-assignee">
+                        <i data-lucide="user" class="meta-icon"></i>
+                        <span>Amanda Williams</span>
+                    </div>
+                    <div class="bill-date">
+                        <i data-lucide="clock" class="meta-icon"></i>
+                        <span>Jan 29, 2025</span>
+                    </div>
+                </div>
+
+                <div class="bill-actions">
+                    <button class="action-btn primary">View Details</button>
+                    <button class="action-btn secondary">
+                        <i data-lucide="message-square"></i>
+                    </button>
+                    <button class="action-btn secondary">
+                        <i data-lucide="share"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lists Tab -->
+    <div id="demo-clients" class="demo-content">
+        <!-- Lists Header -->
+        <div class="clients-header">
+            <h2 class="clients-title">List Management</h2>
+            <button class="add-client-btn">
+                <i data-lucide="plus"></i>
+                Add List
+            </button>
         </div>
 
-        <!-- Demo Content -->
+        <!-- Clients Grid -->
+        <div class="clients-grid">
+            <!-- Client Card 1 - TechCorp Industries -->
+            <div class="client-card">
+                <div class="client-header">
+                    <div class="client-avatar">
+                        <div class="avatar-circle blue">
+                            <span>TE</span>
+                        </div>
+                        <div class="client-info">
+                            <h3 class="client-name">TechCorp Industries</h3>
+                            <p class="client-industry">Technology</p>
+                        </div>
+                    </div>
+                    <span class="client-status-badge active">active</span>
+                </div>
 
-        <!-- Demo Dashboard Tab -->
-        <div id="demo-dashboard" class="demo-content active">
-            <!-- Metrics Cards -->
-            <div class="demo-metrics">
-                <div class="metric-card">
-                    <div class="metric-header">
+                <div class="client-metrics">
+                    <div class="metric-row">
                         <span class="metric-label">Active Bills</span>
-                        <i data-lucide="activity" class="metric-icon blue"></i>
+                        <span class="metric-value">3</span>
                     </div>
-                    <div class="metric-value blue">2</div>
                 </div>
-                <div class="metric-card">
-                    <div class="metric-header">
-                        <span class="metric-label">Success Rate</span>
-                        <i data-lucide="trending-up" class="metric-icon green"></i>
+
+                <div class="client-contact">
+                    <div class="contact-row">
+                        <i data-lucide="user" class="contact-icon"></i>
+                        <span>John Smith</span>
                     </div>
-                    <div class="metric-value green">25%</div>
+                    <div class="contact-row">
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <span>john.smith@techcorp.com</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
                 </div>
-                <div class="metric-card">
-                    <div class="metric-header">
-                        <span class="metric-label">Contract Value</span>
-                        <i data-lucide="dollar-sign" class="metric-icon purple"></i>
-                    </div>
-                    <div class="metric-value purple">$455,000</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-header">
-                        <span class="metric-label">Overdue Tasks</span>
-                        <i data-lucide="alert-circle" class="metric-icon red"></i>
-                    </div>
-                    <div class="metric-value red">3</div>
+
+                <div class="client-actions">
+                    <button class="action-btn primary">View Details</button>
+                    <button class="action-btn secondary">
+                        <i data-lucide="message-square"></i>
+                    </button>
                 </div>
             </div>
 
-            <!-- Dashboard Content -->
-            <div class="demo-dashboard-grid">
-                <!-- High Priority Bills -->
-                <div class="dashboard-section">
-                    <h3 class="section-title">High Priority Bills</h3>
-                    <div class="bills-container">
-                        <div class="bill-card">
-                            <div class="bill-header">
-                                <div class="bill-info">
-                                    <h4>HB 101</h4>
-                                    <p>Improve Broadband Access Act</p>
-                                </div>
-                                <div class="bill-badges">
-                                    <span class="status-badge active">Active</span>
-                                </div>
-                            </div>
-                            <div class="bill-progress">
-                                <div class="progress-info">
-                                    <span class="progress-label">Progress: 65%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 65%"></div>
-                                </div>
-                            </div>
+            <!-- Client Card 2 - Healthcare Alliance -->
+            <div class="client-card">
+                <div class="client-header">
+                    <div class="client-avatar">
+                        <div class="avatar-circle green">
+                            <span>HE</span>
                         </div>
+                        <div class="client-info">
+                            <h3 class="client-name">Healthcare Alliance</h3>
+                            <p class="client-industry">Healthcare</p>
+                        </div>
+                    </div>
+                    <span class="client-status-badge active">active</span>
+                </div>
 
-                        <div class="bill-card">
-                            <div class="bill-header">
-                                <div class="bill-info">
-                                    <h4>HB 205</h4>
-                                    <p>Clean Energy Infrastructure Investment</p>
-                                </div>
-                                <div class="bill-badges">
-                                    <span class="status-badge completed">Completed</span>
-                                </div>
-                            </div>
-                            <div class="bill-progress">
-                                <div class="progress-info">
-                                    <span class="progress-label">Progress: 100%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 100%"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bill-card">
-                            <div class="bill-header">
-                                <div class="bill-info">
-                                    <h4>SB 89</h4>
-                                    <p>Healthcare Access Expansion</p>
-                                </div>
-                                <div class="bill-badges">
-                                    <span class="status-badge active">Active</span>
-                                </div>
-                            </div>
-                            <div class="bill-progress">
-                                <div class="progress-info">
-                                    <span class="progress-label">Progress: 45%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 45%"></div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="client-metrics">
+                    <div class="metric-row">
+                        <span class="metric-label">Active Bills</span>
+                        <span class="metric-value">2</span>
                     </div>
                 </div>
 
-                <!-- Upcoming Tasks -->
-                <div class="dashboard-section">
-                    <h3 class="section-title">Upcoming Tasks</h3>
-                    <div class="tasks-container">
-                        <div class="task-card">
-                            <div class="task-header">
-                                <h4 class="task-title">Schedule meeting with Rep. Smith</h4>
-                                <span class="priority-badge high">High</span>
+                <div class="client-contact">
+                    <div class="contact-row">
+                        <i data-lucide="user" class="contact-icon"></i>
+                        <span>Dr. Emily Johnson</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <span>emily.johnson@healthalliance.org</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <span>+1 (555) 234-5678</span>
+                    </div>
+                </div>
+
+                <div class="client-actions">
+                    <button class="action-btn primary">View Details</button>
+                    <button class="action-btn secondary">
+                        <i data-lucide="message-square"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Client Card 3 - Green Energy Coalition -->
+            <div class="client-card">
+                <div class="client-header">
+                    <div class="client-avatar">
+                        <div class="avatar-circle orange">
+                            <span>GR</span>
+                        </div>
+                        <div class="client-info">
+                            <h3 class="client-name">Green Energy Coalition</h3>
+                            <p class="client-industry">Energy</p>
+                        </div>
+                    </div>
+                    <span class="client-status-badge active">active</span>
+                </div>
+
+                <div class="client-metrics">
+                    <div class="metric-row">
+                        <span class="metric-label">Active Bills</span>
+                        <span class="metric-value">4</span>
+                    </div>
+                </div>
+
+                <div class="client-contact">
+                    <div class="contact-row">
+                        <i data-lucide="user" class="contact-icon"></i>
+                        <span>Maria Rodriguez</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <span>maria.rodriguez@greenenergy.com</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <span>+1 (555) 345-6789</span>
+                    </div>
+                </div>
+
+                <div class="client-actions">
+                    <button class="action-btn primary">View Details</button>
+                    <button class="action-btn secondary">
+                        <i data-lucide="message-square"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Client Card 4 - Small Business Federation -->
+            <div class="client-card">
+                <div class="client-header">
+                    <div class="client-avatar">
+                        <div class="avatar-circle purple">
+                            <span>SM</span>
+                        </div>
+                        <div class="client-info">
+                            <h3 class="client-name">Small Business Federation</h3>
+                            <p class="client-industry">Business Services</p>
+                        </div>
+                    </div>
+                    <span class="client-status-badge prospect">prospect</span>
+                </div>
+
+                <div class="client-metrics">
+                    <div class="metric-row">
+                        <span class="metric-label">Active Bills</span>
+                        <span class="metric-value">1</span>
+                    </div>
+                </div>
+
+                <div class="client-contact">
+                    <div class="contact-row">
+                        <i data-lucide="user" class="contact-icon"></i>
+                        <span>Robert Chen</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <span>robert.chen@sbfed.org</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <span>+1 (555) 456-7890</span>
+                    </div>
+                </div>
+
+                <div class="client-actions">
+                    <button class="action-btn primary">View Details</button>
+                    <button class="action-btn secondary">
+                        <i data-lucide="message-square"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Legislators Tab -->
+    <div id="demo-legislators" class="demo-content">
+        <!-- Legislators Header -->
+        <div class="legislators-header">
+            <div class="legislators-title-section">
+                <h2 class="legislators-title">Legislature Contacts</h2>
+                <p class="legislators-subtitle">Connect with key legislators and track relationships</p>
+            </div>
+            <button class="add-contact-btn">
+                <i data-lucide="plus"></i>
+                Add Contact
+            </button>
+        </div>
+
+        <!-- Search and Filter Bar -->
+        <div class="legislators-filter-section">
+            <div class="legislators-search-bar">
+                <div class="search-input-container">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" placeholder="Search legislators by name, district, or committee..."
+                        class="legislators-search-input">
+                </div>
+                <div class="filter-controls">
+                    <select class="filter-select">
+                        <option>All Chambers</option>
+                        <option>Senate</option>
+                        <option>House</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>All Parties</option>
+                        <option>Democrat</option>
+                        <option>Republican</option>
+                        <option>Independent</option>
+                    </select>
+                    <button class="filter-btn">
+                        <i data-lucide="filter"></i>
+                        Filter
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Legislators Grid -->
+        <div class="legislators-grid">
+            <!-- Legislator Card 1 - Rep. Ada Smith -->
+            <div class="legislator-card">
+                <div class="legislator-header">
+                    <div class="legislator-avatar">
+                        <div class="avatar-photo">
+                            <img src="https://images.unsplash.com/photo-1655249493799-9cee4fe983bb?w=100&h=100&fit=crop&crop=face"
+                                alt="Rep. Ada Smith">
+                        </div>
+                        <div class="legislator-info">
+                            <h3 class="legislator-name">Rep. Ada Smith</h3>
+                            <p class="legislator-title">Representative</p>
+                            <p class="legislator-district">District 15</p>
+                        </div>
+                    </div>
+                    <div class="legislator-badges">
+                        <span class="party-badge democrat">Democrat</span>
+                        <span class="relationship-badge strong">Strong</span>
+                    </div>
+                </div>
+
+                <div class="legislator-contact">
+                    <div class="contact-row">
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <span>ada.smith@legislature.gov</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <span>+1 (555) 111-1111</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="map-pin" class="contact-icon"></i>
+                        <span>100 State Capitol, Suite 215</span>
+                    </div>
+                </div>
+
+                <div class="committees-section">
+                    <p class="committees-label">Committees</p>
+                    <div class="committees-tags">
+                        <span class="committee-tag">Technology & Innovation</span>
+                        <span class="committee-tag">Economic Development</span>
+                    </div>
+                </div>
+
+                <div class="legislator-meta">
+                    <span class="meta-text">8 years in office</span>
+                    <span class="meta-text">Last contact: Jan 9, 2025</span>
+                </div>
+
+                <div class="legislator-actions">
+                    <div class="social-icons">
+                        <button class="social-btn">
+                            <i data-lucide="globe"></i>
+                        </button>
+                        <button class="social-btn">
+                            <i data-lucide="twitter"></i>
+                        </button>
+                        <button class="social-btn">
+                            <i data-lucide="linkedin"></i>
+                        </button>
+                    </div>
+                    <button class="contact-btn">
+                        <i data-lucide="message-square"></i>
+                        Contact
+                    </button>
+                    <button class="calendar-btn">
+                        <i data-lucide="calendar"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Legislator Card 2 - Sen. Maria Gomez -->
+            <div class="legislator-card">
+                <div class="legislator-header">
+                    <div class="legislator-avatar">
+                        <div class="avatar-photo">
+                            <img src="https://images.unsplash.com/photo-1576558656222-ba66febe3dec?w=100&h=100&fit=crop&crop=face"
+                                alt="Sen. Maria Gomez">
+                        </div>
+                        <div class="legislator-info">
+                            <h3 class="legislator-name">Sen. Maria Gomez</h3>
+                            <p class="legislator-title">Senator</p>
+                            <p class="legislator-district">District 8</p>
+                        </div>
+                    </div>
+                    <div class="legislator-badges">
+                        <span class="party-badge republican">Republican</span>
+                        <span class="relationship-badge moderate">Moderate</span>
+                    </div>
+                </div>
+
+                <div class="legislator-contact">
+                    <div class="contact-row">
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <span>maria.gomez@senate.gov</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <span>+1 (555) 222-2222</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="map-pin" class="contact-icon"></i>
+                        <span>200 State Capitol, Suite 310</span>
+                    </div>
+                </div>
+
+                <div class="committees-section">
+                    <p class="committees-label">Committees</p>
+                    <div class="committees-tags">
+                        <span class="committee-tag">Labor & Workforce</span>
+                        <span class="committee-tag">Finance</span>
+                    </div>
+                </div>
+
+                <div class="legislator-meta">
+                    <span class="meta-text">12 years in office</span>
+                    <span class="meta-text">Last contact: Dec 14, 2024</span>
+                </div>
+
+                <div class="legislator-actions">
+                    <div class="social-icons">
+                        <button class="social-btn">
+                            <i data-lucide="globe"></i>
+                        </button>
+                        <button class="social-btn">
+                            <i data-lucide="twitter"></i>
+                        </button>
+                    </div>
+                    <button class="contact-btn">
+                        <i data-lucide="message-square"></i>
+                        Contact
+                    </button>
+                    <button class="calendar-btn">
+                        <i data-lucide="calendar"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Legislator Card 3 - Rep. John Doe -->
+            <div class="legislator-card">
+                <div class="legislator-header">
+                    <div class="legislator-avatar">
+                        <div class="avatar-photo">
+                            <img src="https://images.unsplash.com/photo-1708195886023-3ecb00ac7a49?w=100&h=100&fit=crop&crop=face"
+                                alt="Rep. John Doe">
+                        </div>
+                        <div class="legislator-info">
+                            <h3 class="legislator-name">Rep. John Doe</h3>
+                            <p class="legislator-title">Representative</p>
+                            <p class="legislator-district">District 22</p>
+                        </div>
+                    </div>
+                    <div class="legislator-badges">
+                        <span class="party-badge democrat">Democrat</span>
+                        <span class="relationship-badge strong">Strong</span>
+                    </div>
+                </div>
+
+                <div class="legislator-contact">
+                    <div class="contact-row">
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <span>john.doe@legislature.gov</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <span>+1 (555) 333-3333</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="map-pin" class="contact-icon"></i>
+                        <span>100 State Capitol, Suite 118</span>
+                    </div>
+                </div>
+
+                <div class="committees-section">
+                    <p class="committees-label">Committees</p>
+                    <div class="committees-tags">
+                        <span class="committee-tag">Technology & Innovation</span>
+                        <span class="committee-tag">Education</span>
+                    </div>
+                </div>
+
+                <div class="legislator-meta">
+                    <span class="meta-text">4 years in office</span>
+                    <span class="meta-text">Last contact: Jan 7, 2025</span>
+                </div>
+
+                <div class="legislator-actions">
+                    <div class="social-icons">
+                        <button class="social-btn">
+                            <i data-lucide="globe"></i>
+                        </button>
+                        <button class="social-btn">
+                            <i data-lucide="linkedin"></i>
+                        </button>
+                    </div>
+                    <button class="contact-btn">
+                        <i data-lucide="message-square"></i>
+                        Contact
+                    </button>
+                    <button class="calendar-btn">
+                        <i data-lucide="calendar"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Legislator Card 4 - Sen. Robert Taylor -->
+            <div class="legislator-card">
+                <div class="legislator-header">
+                    <div class="legislator-avatar">
+                        <div class="avatar-photo">
+                            <img src="https://images.unsplash.com/photo-1689600944138-da3b150d9cb8?w=100&h=100&fit=crop&crop=face"
+                                alt="Sen. Robert Taylor">
+                        </div>
+                        <div class="legislator-info">
+                            <h3 class="legislator-name">Sen. Robert Taylor</h3>
+                            <p class="legislator-title">Senator</p>
+                            <p class="legislator-district">District 5</p>
+                        </div>
+                    </div>
+                    <div class="legislator-badges">
+                        <span class="party-badge republican">Republican</span>
+                        <span class="relationship-badge weak">Weak</span>
+                    </div>
+                </div>
+
+                <div class="legislator-contact">
+                    <div class="contact-row">
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <span>robert.taylor@senate.gov</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <span>+1 (555) 444-4444</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="map-pin" class="contact-icon"></i>
+                        <span>200 State Capitol, Suite 405</span>
+                    </div>
+                </div>
+
+                <div class="committees-section">
+                    <p class="committees-label">Committees</p>
+                    <div class="committees-tags">
+                        <span class="committee-tag">Healthcare</span>
+                        <span class="committee-tag">Veterans Affairs</span>
+                    </div>
+                </div>
+
+                <div class="legislator-meta">
+                    <span class="meta-text">16 years in office</span>
+                    <span class="meta-text">Last contact: Nov 21, 2024</span>
+                </div>
+
+                <div class="legislator-actions">
+                    <div class="social-icons">
+                        <button class="social-btn">
+                            <i data-lucide="globe"></i>
+                        </button>
+                        <button class="social-btn">
+                            <i data-lucide="twitter"></i>
+                        </button>
+                        <button class="social-btn">
+                            <i data-lucide="linkedin"></i>
+                        </button>
+                    </div>
+                    <button class="contact-btn">
+                        <i data-lucide="message-square"></i>
+                        Contact
+                    </button>
+                    <button class="calendar-btn">
+                        <i data-lucide="calendar"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Legislator Card 5 - Rep. Sarah Johnson -->
+            <div class="legislator-card">
+                <div class="legislator-header">
+                    <div class="legislator-avatar">
+                        <div class="avatar-circle gray">
+                            <span>RSJ</span>
+                        </div>
+                        <div class="legislator-info">
+                            <h3 class="legislator-name">Rep. Sarah Johnson</h3>
+                            <p class="legislator-title">Representative</p>
+                            <p class="legislator-district">District 9</p>
+                        </div>
+                    </div>
+                    <div class="legislator-badges">
+                        <span class="party-badge independent">Independent</span>
+                        <span class="relationship-badge none">None</span>
+                    </div>
+                </div>
+
+                <div class="legislator-contact">
+                    <div class="contact-row">
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <span>sarah.johnson@legislature.gov</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <span>+1 (555) 555-5555</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="map-pin" class="contact-icon"></i>
+                        <span>100 State Capitol, Suite 142</span>
+                    </div>
+                </div>
+
+                <div class="committees-section">
+                    <p class="committees-label">Committees</p>
+                    <div class="committees-tags">
+                        <span class="committee-tag">Environment & Energy</span>
+                        <span class="committee-tag">Transportation</span>
+                    </div>
+                </div>
+
+                <div class="legislator-meta">
+                    <span class="meta-text">6 years in office</span>
+                </div>
+
+                <div class="legislator-actions">
+                    <div class="social-icons">
+                    </div>
+                    <button class="contact-btn">
+                        <i data-lucide="message-square"></i>
+                        Contact
+                    </button>
+                    <button class="calendar-btn">
+                        <i data-lucide="calendar"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Legislator Card 6 - Rep. Michael Chen -->
+            <div class="legislator-card">
+                <div class="legislator-header">
+                    <div class="legislator-avatar">
+                        <div class="avatar-circle blue">
+                            <span>RMC</span>
+                        </div>
+                        <div class="legislator-info">
+                            <h3 class="legislator-name">Rep. Michael Chen</h3>
+                            <p class="legislator-title">Representative</p>
+                            <p class="legislator-district">District 31</p>
+                        </div>
+                    </div>
+                    <div class="legislator-badges">
+                        <span class="party-badge democrat">Democrat</span>
+                        <span class="relationship-badge moderate">Moderate</span>
+                    </div>
+                </div>
+
+                <div class="legislator-contact">
+                    <div class="contact-row">
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <span>michael.chen@legislature.gov</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <span>+1 (555) 666-6666</span>
+                    </div>
+                    <div class="contact-row">
+                        <i data-lucide="map-pin" class="contact-icon"></i>
+                        <span>100 State Capitol, Suite 203</span>
+                    </div>
+                </div>
+
+                <div class="committees-section">
+                    <p class="committees-label">Committees</p>
+                    <div class="committees-tags">
+                        <span class="committee-tag">Finance</span>
+                        <span class="committee-tag">Small Business</span>
+                    </div>
+                </div>
+
+                <div class="legislator-meta">
+                    <span class="meta-text">2 years in office</span>
+                    <span class="meta-text">Last contact: Jan 4, 2025</span>
+                </div>
+
+                <div class="legislator-actions">
+                    <div class="social-icons">
+                        <button class="social-btn">
+                            <i data-lucide="globe"></i>
+                        </button>
+                        <button class="social-btn">
+                            <i data-lucide="linkedin"></i>
+                        </button>
+                    </div>
+                    <button class="contact-btn">
+                        <i data-lucide="message-square"></i>
+                        Contact
+                    </button>
+                    <button class="calendar-btn">
+                        <i data-lucide="calendar"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Assistant Tab -->
+    <div id="demo-ai-assistant" class="demo-content">
+        <!-- AI Assistant Header -->
+        <div class="ai-assistant-header">
+            <div class="ai-title-section">
+                <h2 class="ai-main-title">
+                    <i data-lucide="bot" class="ai-title-icon"></i>
+                    AI Legislative Assistant
+                </h2>
+                <p class="ai-subtitle">Get intelligent insights about your bills, clients, and strategy</p>
+            </div>
+            <div class="ai-status-badge">
+                <i data-lucide="zap"></i>
+                AI Powered
+            </div>
+        </div>
+
+        <!-- AI Assistant Content Layout -->
+        <div class="ai-assistant-layout">
+            <!-- Quick Insights Section -->
+            <div class="quick-insights-section">
+                <h3 class="insights-title">
+                    <i data-lucide="lightbulb"></i>
+                    Quick Insights
+                </h3>
+                <div class="insights-list">
+                    <button class="insight-prompt">
+                        <i data-lucide="help-circle"></i>
+                        What's the status of our high priority bills?
+                    </button>
+                    <button class="insight-prompt">
+                        <i data-lucide="help-circle"></i>
+                        Show me performance metrics
+                    </button>
+                    <button class="insight-prompt">
+                        <i data-lucide="help-circle"></i>
+                        Which bills need immediate attention?
+                    </button>
+                    <button class="insight-prompt">
+                        <i data-lucide="help-circle"></i>
+                        Analyze TechCorp Industries portfolio
+                    </button>
+                    <button class="insight-prompt">
+                        <i data-lucide="help-circle"></i>
+                        What are the current legislative trends?
+                    </button>
+                </div>
+            </div>
+
+            <!-- Legislative Intelligence Chat -->
+            <div class="legislative-chat-section">
+                <h3 class="chat-title">Legislative Intelligence Chat</h3>
+                <div class="chat-container">
+                    <div class="chat-messages">
+                        <div class="chat-message assistant">
+                            <div class="message-avatar">
+                                <i data-lucide="bot"></i>
                             </div>
-                            <p class="task-description">Discuss HB 101 amendments and timeline</p>
-                            <div class="task-date">
-                                <i data-lucide="calendar"></i>
-                                <span>Jan 24, 2025</span>
+                            <div class="message-content">
+                                <p>Hello! I'm your AI legislative assistant. I can help you analyze bills, identify
+                                    trends, suggest strategies, and answer questions about your legislative
+                                    portfolio. How can I assist you today?</p>
+                                <span class="message-timestamp">6:30:11 PM</span>
                             </div>
                         </div>
+                    </div>
+                    <div class="chat-input-section">
+                        <div class="chat-input-container">
+                            <input type="text" class="chat-input"
+                                placeholder="Ask me about your bills, clients, or lobbying strategy...">
+                            <button class="chat-send-btn">
+                                <i data-lucide="send"></i>
+                            </button>
+                        </div>
+                        <p class="chat-suggestions">Ask about bill progress, client analysis, legislative trends, or
+                            strategic recommendations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                        <div class="task-card">
-                            <div class="task-header">
-                                <h4 class="task-title">Prepare committee testimony</h4>
+        <!-- AI Capabilities Section -->
+        <div class="ai-capabilities-section">
+            <h3 class="capabilities-title">AI Capabilities</h3>
+            <div class="capabilities-grid">
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i data-lucide="bar-chart-3"></i>
+                    </div>
+                    <h4>Bill Analysis</h4>
+                    <p>Track progress, identify trends, and get strategic insights</p>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h4>Client Intelligence</h4>
+                    <p>Portfolio analysis and relationship optimization</p>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h4>Market Trends</h4>
+                    <p>Legislative landscape analysis and predictions</p>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i data-lucide="target"></i>
+                    </div>
+                    <h4>Strategic Guidance</h4>
+                    <p>Personalized recommendations and tactics</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tasks Tab -->
+    <div id="demo-tasks" class="demo-content">
+        <!-- Tasks Header -->
+        <div class="tasks-header">
+            <h2 class="tasks-title">Task Management</h2>
+            <button class="add-task-btn">
+                <i data-lucide="plus"></i>
+                Add Task
+            </button>
+        </div>
+
+        <!-- Tasks List -->
+        <div class="tasks-list">
+            <!-- Task 1 -->
+            <div class="task-item">
+                <div class="task-content">
+                    <div class="task-main">
+                        <div class="task-title-row">
+                            <h3 class="task-title">Schedule meeting with Rep. Smith</h3>
+                            <div class="task-badges">
                                 <span class="priority-badge high">High</span>
-                            </div>
-                            <p class="task-description">Draft testimony for Healthcare Access Expansion bill</p>
-                            <div class="task-date">
-                                <i data-lucide="calendar"></i>
-                                <span>Jan 29, 2025</span>
+                                <span class="status-badge pending">pending</span>
                             </div>
                         </div>
+                        <p class="task-description">Discuss HB 101 amendments and timeline</p>
+                        <div class="task-meta">
+                            <div class="task-assignee">
+                                <i data-lucide="user" class="meta-icon"></i>
+                                <span>Sarah Johnson</span>
+                            </div>
+                            <div class="task-due-date">
+                                <i data-lucide="calendar" class="meta-icon"></i>
+                                <span>Due: Jan 24, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-actions">
+                        <button class="task-action-btn edit">Edit</button>
+                        <button class="task-action-btn complete">
+                            <i data-lucide="check"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="task-card">
-                            <div class="task-header">
-                                <h4 class="task-title">Client update report</h4>
+            <!-- Task 2 -->
+            <div class="task-item">
+                <div class="task-content">
+                    <div class="task-main">
+                        <div class="task-title-row">
+                            <h3 class="task-title">Prepare committee testimony</h3>
+                            <div class="task-badges">
+                                <span class="priority-badge high">High</span>
+                                <span class="status-badge in-progress">in progress</span>
+                            </div>
+                        </div>
+                        <p class="task-description">Draft testimony for Healthcare Access Expansion bill</p>
+                        <div class="task-meta">
+                            <div class="task-assignee">
+                                <i data-lucide="user" class="meta-icon"></i>
+                                <span>Amanda Williams</span>
+                            </div>
+                            <div class="task-due-date">
+                                <i data-lucide="calendar" class="meta-icon"></i>
+                                <span>Due: Jan 29, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-actions">
+                        <button class="task-action-btn edit">Edit</button>
+                        <button class="task-action-btn complete">
+                            <i data-lucide="check"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task 3 -->
+            <div class="task-item">
+                <div class="task-content">
+                    <div class="task-main">
+                        <div class="task-title-row">
+                            <h3 class="task-title">Client update report</h3>
+                            <div class="task-badges">
                                 <span class="priority-badge medium">Medium</span>
-                            </div>
-                            <p class="task-description">Weekly progress report for TechCorp Industries</p>
-                            <div class="task-date">
-                                <i data-lucide="calendar"></i>
-                                <span>Jan 21, 2025</span>
+                                <span class="status-badge pending">pending</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bills Tab -->
-        <div id="demo-bills" class="demo-content">
-            <!-- Search and Filter Bar -->
-            <div class="bills-filter-section">
-                <div class="bills-search-bar">
-                    <div class="search-input-container">
-                        <i data-lucide="search" class="search-icon"></i>
-                        <input type="text" placeholder="Search bills..." class="bills-search-input">
-                    </div>
-                    <div class="filter-controls">
-                        <select class="filter-select">
-                            <option>All Status</option>
-                            <option>Active</option>
-                            <option>Monitoring</option>
-                            <option>Completed</option>
-                            <option>Paused</option>
-                        </select>
-                        <select class="filter-select">
-                            <option>All Priority</option>
-                            <option>High</option>
-                            <option>Medium</option>
-                            <option>Low</option>
-                        </select>
-                        <button class="filter-btn">
-                            <i data-lucide="filter"></i>
-                            Filter
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bills Grid -->
-            <div class="bills-grid">
-                <!-- Bill Card 1 -->
-                <div class="bill-detail-card">
-                    <div class="bill-detail-header">
-                        <div class="bill-number-section">
-                            <h3 class="bill-number">HB 101</h3>
-                            <h4 class="bill-full-title">Improve Broadband Access Act</h4>
-                        </div>
-                        <div class="bill-status-badges">
-                            <span class="priority-badge high">High</span>
-                            <span class="status-badge active">Active</span>
+                        <p class="task-description">Weekly progress report for TechCorp Industries</p>
+                        <div class="task-meta">
+                            <div class="task-assignee">
+                                <i data-lucide="user" class="meta-icon"></i>
+                                <span>Michael Chen</span>
+                            </div>
+                            <div class="task-due-date">
+                                <i data-lucide="calendar" class="meta-icon"></i>
+                                <span>Due: Jan 21, 2025</span>
+                            </div>
                         </div>
                     </div>
-
-                    <p class="bill-description">Provides funding for rural broadband expansion and incentivizes public-private partnerships to extend high-speed internet into underserved communities.</p>
-
-                    <div class="bill-progress-section">
-                        <div class="progress-header">
-                            <span class="progress-text">Progress</span>
-                            <span class="progress-percentage">65%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 65%"></div>
-                        </div>
-                    </div>
-
-                    <div class="bill-meta-info">
-                        <div class="bill-assignee">
-                            <i data-lucide="user" class="meta-icon"></i>
-                            <span>Sarah Johnson</span>
-                        </div>
-                        <div class="bill-date">
-                            <i data-lucide="clock" class="meta-icon"></i>
-                            <span>Jan 24, 2025</span>
-                        </div>
-                    </div>
-
-                    <div class="bill-actions">
-                        <button class="action-btn primary">View Details</button>
-                        <button class="action-btn secondary">
-                            <i data-lucide="message-square"></i>
-                        </button>
-                        <button class="action-btn secondary">
-                            <i data-lucide="share"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Bill Card 2 -->
-                <div class="bill-detail-card">
-                    <div class="bill-detail-header">
-                        <div class="bill-number-section">
-                            <h3 class="bill-number">SB 57</h3>
-                            <h4 class="bill-full-title">Workforce Training Tax Credit</h4>
-                        </div>
-                        <div class="bill-status-badges">
-                            <span class="priority-badge medium">Medium</span>
-                            <span class="status-badge monitoring">Monitoring</span>
-                        </div>
-                    </div>
-
-                    <p class="bill-description">Establishes a tax credit for businesses that provide accredited workforce training programs.</p>
-
-                    <div class="bill-progress-section">
-                        <div class="progress-header">
-                            <span class="progress-text">Progress</span>
-                            <span class="progress-percentage">30%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 30%"></div>
-                        </div>
-                    </div>
-
-                    <div class="bill-meta-info">
-                        <div class="bill-assignee">
-                            <i data-lucide="user" class="meta-icon"></i>
-                            <span>Michael Chen</span>
-                        </div>
-                    </div>
-
-                    <div class="bill-actions">
-                        <button class="action-btn primary">View Details</button>
-                        <button class="action-btn secondary">
-                            <i data-lucide="message-square"></i>
-                        </button>
-                        <button class="action-btn secondary">
-                            <i data-lucide="share"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Bill Card 3 -->
-                <div class="bill-detail-card">
-                    <div class="bill-detail-header">
-                        <div class="bill-number-section">
-                            <h3 class="bill-number">HB 205</h3>
-                            <h4 class="bill-full-title">Clean Energy Infrastructure Investment</h4>
-                        </div>
-                        <div class="bill-status-badges">
-                            <span class="priority-badge high">High</span>
-                            <span class="status-badge completed">Completed</span>
-                        </div>
-                    </div>
-
-                    <p class="bill-description">Authorizes state investment in renewable energy infrastructure projects and creates green job training programs.</p>
-
-                    <div class="bill-progress-section">
-                        <div class="progress-header">
-                            <span class="progress-text">Progress</span>
-                            <span class="progress-percentage">100%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 100%"></div>
-                        </div>
-                    </div>
-
-                    <div class="bill-meta-info">
-                        <div class="bill-assignee">
-                            <i data-lucide="user" class="meta-icon"></i>
-                            <span>David Park</span>
-                        </div>
-                    </div>
-
-                    <div class="bill-actions">
-                        <button class="action-btn primary">View Details</button>
-                        <button class="action-btn secondary">
-                            <i data-lucide="message-square"></i>
-                        </button>
-                        <button class="action-btn secondary">
-                            <i data-lucide="share"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Bill Card 4 -->
-                <div class="bill-detail-card">
-                    <div class="bill-detail-header">
-                        <div class="bill-number-section">
-                            <h3 class="bill-number">SB 89</h3>
-                            <h4 class="bill-full-title">Healthcare Access Expansion</h4>
-                        </div>
-                        <div class="bill-status-badges">
-                            <span class="priority-badge high">High</span>
-                            <span class="status-badge active">Active</span>
-                        </div>
-                    </div>
-
-                    <p class="bill-description">Expands healthcare coverage options for small businesses and independent contractors.</p>
-
-                    <div class="bill-progress-section">
-                        <div class="progress-header">
-                            <span class="progress-text">Progress</span>
-                            <span class="progress-percentage">45%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 45%"></div>
-                        </div>
-                    </div>
-
-                    <div class="bill-meta-info">
-                        <div class="bill-assignee">
-                            <i data-lucide="user" class="meta-icon"></i>
-                            <span>Amanda Williams</span>
-                        </div>
-                        <div class="bill-date">
-                            <i data-lucide="clock" class="meta-icon"></i>
-                            <span>Jan 29, 2025</span>
-                        </div>
-                    </div>
-
-                    <div class="bill-actions">
-                        <button class="action-btn primary">View Details</button>
-                        <button class="action-btn secondary">
-                            <i data-lucide="message-square"></i>
-                        </button>
-                        <button class="action-btn secondary">
-                            <i data-lucide="share"></i>
+                    <div class="task-actions">
+                        <button class="task-action-btn edit">Edit</button>
+                        <button class="task-action-btn complete">
+                            <i data-lucide="check"></i>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Lists Tab -->
-        <div id="demo-clients" class="demo-content">
-            <!-- Lists Header -->
-            <div class="clients-header">
-                <h2 class="clients-title">List Management</h2>
-                <button class="add-client-btn">
-                    <i data-lucide="plus"></i>
-                    Add List
-                </button>
-            </div>
-
-            <!-- Clients Grid -->
-            <div class="clients-grid">
-                <!-- Client Card 1 - TechCorp Industries -->
-                <div class="client-card">
-                    <div class="client-header">
-                        <div class="client-avatar">
-                            <div class="avatar-circle blue">
-                                <span>TE</span>
-                            </div>
-                            <div class="client-info">
-                                <h3 class="client-name">TechCorp Industries</h3>
-                                <p class="client-industry">Technology</p>
-                            </div>
-                        </div>
-                        <span class="client-status-badge active">active</span>
-                    </div>
-
-                    <div class="client-metrics">
-                        <div class="metric-row">
-                            <span class="metric-label">Active Bills</span>
-                            <span class="metric-value">3</span>
-                        </div>
-                    </div>
-
-                    <div class="client-contact">
-                        <div class="contact-row">
-                            <i data-lucide="user" class="contact-icon"></i>
-                            <span>John Smith</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="mail" class="contact-icon"></i>
-                            <span>john.smith@techcorp.com</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="phone" class="contact-icon"></i>
-                            <span>+1 (555) 123-4567</span>
-                        </div>
-                    </div>
-
-                    <div class="client-actions">
-                        <button class="action-btn primary">View Details</button>
-                        <button class="action-btn secondary">
-                            <i data-lucide="message-square"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Client Card 2 - Healthcare Alliance -->
-                <div class="client-card">
-                    <div class="client-header">
-                        <div class="client-avatar">
-                            <div class="avatar-circle green">
-                                <span>HE</span>
-                            </div>
-                            <div class="client-info">
-                                <h3 class="client-name">Healthcare Alliance</h3>
-                                <p class="client-industry">Healthcare</p>
-                            </div>
-                        </div>
-                        <span class="client-status-badge active">active</span>
-                    </div>
-
-                    <div class="client-metrics">
-                        <div class="metric-row">
-                            <span class="metric-label">Active Bills</span>
-                            <span class="metric-value">2</span>
-                        </div>
-                    </div>
-
-                    <div class="client-contact">
-                        <div class="contact-row">
-                            <i data-lucide="user" class="contact-icon"></i>
-                            <span>Dr. Emily Johnson</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="mail" class="contact-icon"></i>
-                            <span>emily.johnson@healthalliance.org</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="phone" class="contact-icon"></i>
-                            <span>+1 (555) 234-5678</span>
-                        </div>
-                    </div>
-
-                    <div class="client-actions">
-                        <button class="action-btn primary">View Details</button>
-                        <button class="action-btn secondary">
-                            <i data-lucide="message-square"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Client Card 3 - Green Energy Coalition -->
-                <div class="client-card">
-                    <div class="client-header">
-                        <div class="client-avatar">
-                            <div class="avatar-circle orange">
-                                <span>GR</span>
-                            </div>
-                            <div class="client-info">
-                                <h3 class="client-name">Green Energy Coalition</h3>
-                                <p class="client-industry">Energy</p>
-                            </div>
-                        </div>
-                        <span class="client-status-badge active">active</span>
-                    </div>
-
-                    <div class="client-metrics">
-                        <div class="metric-row">
-                            <span class="metric-label">Active Bills</span>
-                            <span class="metric-value">4</span>
-                        </div>
-                    </div>
-
-                    <div class="client-contact">
-                        <div class="contact-row">
-                            <i data-lucide="user" class="contact-icon"></i>
-                            <span>Maria Rodriguez</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="mail" class="contact-icon"></i>
-                            <span>maria.rodriguez@greenenergy.com</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="phone" class="contact-icon"></i>
-                            <span>+1 (555) 345-6789</span>
-                        </div>
-                    </div>
-
-                    <div class="client-actions">
-                        <button class="action-btn primary">View Details</button>
-                        <button class="action-btn secondary">
-                            <i data-lucide="message-square"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Client Card 4 - Small Business Federation -->
-                <div class="client-card">
-                    <div class="client-header">
-                        <div class="client-avatar">
-                            <div class="avatar-circle purple">
-                                <span>SM</span>
-                            </div>
-                            <div class="client-info">
-                                <h3 class="client-name">Small Business Federation</h3>
-                                <p class="client-industry">Business Services</p>
-                            </div>
-                        </div>
-                        <span class="client-status-badge prospect">prospect</span>
-                    </div>
-
-                    <div class="client-metrics">
-                        <div class="metric-row">
-                            <span class="metric-label">Active Bills</span>
-                            <span class="metric-value">1</span>
-                        </div>
-                    </div>
-
-                    <div class="client-contact">
-                        <div class="contact-row">
-                            <i data-lucide="user" class="contact-icon"></i>
-                            <span>Robert Chen</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="mail" class="contact-icon"></i>
-                            <span>robert.chen@sbfed.org</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="phone" class="contact-icon"></i>
-                            <span>+1 (555) 456-7890</span>
-                        </div>
-                    </div>
-
-                    <div class="client-actions">
-                        <button class="action-btn primary">View Details</button>
-                        <button class="action-btn secondary">
-                            <i data-lucide="message-square"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Legislators Tab -->
-        <div id="demo-legislators" class="demo-content">
-            <!-- Legislators Header -->
-            <div class="legislators-header">
-                <div class="legislators-title-section">
-                    <h2 class="legislators-title">Legislature Contacts</h2>
-                    <p class="legislators-subtitle">Connect with key legislators and track relationships</p>
-                </div>
-                <button class="add-contact-btn">
-                    <i data-lucide="plus"></i>
-                    Add Contact
-                </button>
-            </div>
-
-            <!-- Search and Filter Bar -->
-            <div class="legislators-filter-section">
-                <div class="legislators-search-bar">
-                    <div class="search-input-container">
-                        <i data-lucide="search" class="search-icon"></i>
-                        <input type="text" placeholder="Search legislators by name, district, or committee..." class="legislators-search-input">
-                    </div>
-                    <div class="filter-controls">
-                        <select class="filter-select">
-                            <option>All Chambers</option>
-                            <option>Senate</option>
-                            <option>House</option>
-                        </select>
-                        <select class="filter-select">
-                            <option>All Parties</option>
-                            <option>Democrat</option>
-                            <option>Republican</option>
-                            <option>Independent</option>
-                        </select>
-                        <button class="filter-btn">
-                            <i data-lucide="filter"></i>
-                            Filter
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Legislators Grid -->
-            <div class="legislators-grid">
-                <!-- Legislator Card 1 - Rep. Ada Smith -->
-                <div class="legislator-card">
-                    <div class="legislator-header">
-                        <div class="legislator-avatar">
-                            <div class="avatar-photo">
-                                <img src="https://images.unsplash.com/photo-1655249493799-9cee4fe983bb?w=100&h=100&fit=crop&crop=face" alt="Rep. Ada Smith">
-                            </div>
-                            <div class="legislator-info">
-                                <h3 class="legislator-name">Rep. Ada Smith</h3>
-                                <p class="legislator-title">Representative</p>
-                                <p class="legislator-district">District 15</p>
-                            </div>
-                        </div>
-                        <div class="legislator-badges">
-                            <span class="party-badge democrat">Democrat</span>
-                            <span class="relationship-badge strong">Strong</span>
-                        </div>
-                    </div>
-
-                    <div class="legislator-contact">
-                        <div class="contact-row">
-                            <i data-lucide="mail" class="contact-icon"></i>
-                            <span>ada.smith@legislature.gov</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="phone" class="contact-icon"></i>
-                            <span>+1 (555) 111-1111</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="map-pin" class="contact-icon"></i>
-                            <span>100 State Capitol, Suite 215</span>
-                        </div>
-                    </div>
-
-                    <div class="committees-section">
-                        <p class="committees-label">Committees</p>
-                        <div class="committees-tags">
-                            <span class="committee-tag">Technology & Innovation</span>
-                            <span class="committee-tag">Economic Development</span>
-                        </div>
-                    </div>
-
-                    <div class="legislator-meta">
-                        <span class="meta-text">8 years in office</span>
-                        <span class="meta-text">Last contact: Jan 9, 2025</span>
-                    </div>
-
-                    <div class="legislator-actions">
-                        <div class="social-icons">
-                            <button class="social-btn">
-                                <i data-lucide="globe"></i>
-                            </button>
-                            <button class="social-btn">
-                                <i data-lucide="twitter"></i>
-                            </button>
-                            <button class="social-btn">
-                                <i data-lucide="linkedin"></i>
-                            </button>
-                        </div>
-                        <button class="contact-btn">
-                            <i data-lucide="message-square"></i>
-                            Contact
-                        </button>
-                        <button class="calendar-btn">
-                            <i data-lucide="calendar"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Legislator Card 2 - Sen. Maria Gomez -->
-                <div class="legislator-card">
-                    <div class="legislator-header">
-                        <div class="legislator-avatar">
-                            <div class="avatar-photo">
-                                <img src="https://images.unsplash.com/photo-1576558656222-ba66febe3dec?w=100&h=100&fit=crop&crop=face" alt="Sen. Maria Gomez">
-                            </div>
-                            <div class="legislator-info">
-                                <h3 class="legislator-name">Sen. Maria Gomez</h3>
-                                <p class="legislator-title">Senator</p>
-                                <p class="legislator-district">District 8</p>
-                            </div>
-                        </div>
-                        <div class="legislator-badges">
-                            <span class="party-badge republican">Republican</span>
-                            <span class="relationship-badge moderate">Moderate</span>
-                        </div>
-                    </div>
-
-                    <div class="legislator-contact">
-                        <div class="contact-row">
-                            <i data-lucide="mail" class="contact-icon"></i>
-                            <span>maria.gomez@senate.gov</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="phone" class="contact-icon"></i>
-                            <span>+1 (555) 222-2222</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="map-pin" class="contact-icon"></i>
-                            <span>200 State Capitol, Suite 310</span>
-                        </div>
-                    </div>
-
-                    <div class="committees-section">
-                        <p class="committees-label">Committees</p>
-                        <div class="committees-tags">
-                            <span class="committee-tag">Labor & Workforce</span>
-                            <span class="committee-tag">Finance</span>
-                        </div>
-                    </div>
-
-                    <div class="legislator-meta">
-                        <span class="meta-text">12 years in office</span>
-                        <span class="meta-text">Last contact: Dec 14, 2024</span>
-                    </div>
-
-                    <div class="legislator-actions">
-                        <div class="social-icons">
-                            <button class="social-btn">
-                                <i data-lucide="globe"></i>
-                            </button>
-                            <button class="social-btn">
-                                <i data-lucide="twitter"></i>
-                            </button>
-                        </div>
-                        <button class="contact-btn">
-                            <i data-lucide="message-square"></i>
-                            Contact
-                        </button>
-                        <button class="calendar-btn">
-                            <i data-lucide="calendar"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Legislator Card 3 - Rep. John Doe -->
-                <div class="legislator-card">
-                    <div class="legislator-header">
-                        <div class="legislator-avatar">
-                            <div class="avatar-photo">
-                                <img src="https://images.unsplash.com/photo-1708195886023-3ecb00ac7a49?w=100&h=100&fit=crop&crop=face" alt="Rep. John Doe">
-                            </div>
-                            <div class="legislator-info">
-                                <h3 class="legislator-name">Rep. John Doe</h3>
-                                <p class="legislator-title">Representative</p>
-                                <p class="legislator-district">District 22</p>
-                            </div>
-                        </div>
-                        <div class="legislator-badges">
-                            <span class="party-badge democrat">Democrat</span>
-                            <span class="relationship-badge strong">Strong</span>
-                        </div>
-                    </div>
-
-                    <div class="legislator-contact">
-                        <div class="contact-row">
-                            <i data-lucide="mail" class="contact-icon"></i>
-                            <span>john.doe@legislature.gov</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="phone" class="contact-icon"></i>
-                            <span>+1 (555) 333-3333</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="map-pin" class="contact-icon"></i>
-                            <span>100 State Capitol, Suite 118</span>
-                        </div>
-                    </div>
-
-                    <div class="committees-section">
-                        <p class="committees-label">Committees</p>
-                        <div class="committees-tags">
-                            <span class="committee-tag">Technology & Innovation</span>
-                            <span class="committee-tag">Education</span>
-                        </div>
-                    </div>
-
-                    <div class="legislator-meta">
-                        <span class="meta-text">4 years in office</span>
-                        <span class="meta-text">Last contact: Jan 7, 2025</span>
-                    </div>
-
-                    <div class="legislator-actions">
-                        <div class="social-icons">
-                            <button class="social-btn">
-                                <i data-lucide="globe"></i>
-                            </button>
-                            <button class="social-btn">
-                                <i data-lucide="linkedin"></i>
-                            </button>
-                        </div>
-                        <button class="contact-btn">
-                            <i data-lucide="message-square"></i>
-                            Contact
-                        </button>
-                        <button class="calendar-btn">
-                            <i data-lucide="calendar"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Legislator Card 4 - Sen. Robert Taylor -->
-                <div class="legislator-card">
-                    <div class="legislator-header">
-                        <div class="legislator-avatar">
-                            <div class="avatar-photo">
-                                <img src="https://images.unsplash.com/photo-1689600944138-da3b150d9cb8?w=100&h=100&fit=crop&crop=face" alt="Sen. Robert Taylor">
-                            </div>
-                            <div class="legislator-info">
-                                <h3 class="legislator-name">Sen. Robert Taylor</h3>
-                                <p class="legislator-title">Senator</p>
-                                <p class="legislator-district">District 5</p>
-                            </div>
-                        </div>
-                        <div class="legislator-badges">
-                            <span class="party-badge republican">Republican</span>
-                            <span class="relationship-badge weak">Weak</span>
-                        </div>
-                    </div>
-
-                    <div class="legislator-contact">
-                        <div class="contact-row">
-                            <i data-lucide="mail" class="contact-icon"></i>
-                            <span>robert.taylor@senate.gov</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="phone" class="contact-icon"></i>
-                            <span>+1 (555) 444-4444</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="map-pin" class="contact-icon"></i>
-                            <span>200 State Capitol, Suite 405</span>
-                        </div>
-                    </div>
-
-                    <div class="committees-section">
-                        <p class="committees-label">Committees</p>
-                        <div class="committees-tags">
-                            <span class="committee-tag">Healthcare</span>
-                            <span class="committee-tag">Veterans Affairs</span>
-                        </div>
-                    </div>
-
-                    <div class="legislator-meta">
-                        <span class="meta-text">16 years in office</span>
-                        <span class="meta-text">Last contact: Nov 21, 2024</span>
-                    </div>
-
-                    <div class="legislator-actions">
-                        <div class="social-icons">
-                            <button class="social-btn">
-                                <i data-lucide="globe"></i>
-                            </button>
-                            <button class="social-btn">
-                                <i data-lucide="twitter"></i>
-                            </button>
-                            <button class="social-btn">
-                                <i data-lucide="linkedin"></i>
-                            </button>
-                        </div>
-                        <button class="contact-btn">
-                            <i data-lucide="message-square"></i>
-                            Contact
-                        </button>
-                        <button class="calendar-btn">
-                            <i data-lucide="calendar"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Legislator Card 5 - Rep. Sarah Johnson -->
-                <div class="legislator-card">
-                    <div class="legislator-header">
-                        <div class="legislator-avatar">
-                            <div class="avatar-circle gray">
-                                <span>RSJ</span>
-                            </div>
-                            <div class="legislator-info">
-                                <h3 class="legislator-name">Rep. Sarah Johnson</h3>
-                                <p class="legislator-title">Representative</p>
-                                <p class="legislator-district">District 9</p>
-                            </div>
-                        </div>
-                        <div class="legislator-badges">
-                            <span class="party-badge independent">Independent</span>
-                            <span class="relationship-badge none">None</span>
-                        </div>
-                    </div>
-
-                    <div class="legislator-contact">
-                        <div class="contact-row">
-                            <i data-lucide="mail" class="contact-icon"></i>
-                            <span>sarah.johnson@legislature.gov</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="phone" class="contact-icon"></i>
-                            <span>+1 (555) 555-5555</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="map-pin" class="contact-icon"></i>
-                            <span>100 State Capitol, Suite 142</span>
-                        </div>
-                    </div>
-
-                    <div class="committees-section">
-                        <p class="committees-label">Committees</p>
-                        <div class="committees-tags">
-                            <span class="committee-tag">Environment & Energy</span>
-                            <span class="committee-tag">Transportation</span>
-                        </div>
-                    </div>
-
-                    <div class="legislator-meta">
-                        <span class="meta-text">6 years in office</span>
-                    </div>
-
-                    <div class="legislator-actions">
-                        <div class="social-icons">
-                        </div>
-                        <button class="contact-btn">
-                            <i data-lucide="message-square"></i>
-                            Contact
-                        </button>
-                        <button class="calendar-btn">
-                            <i data-lucide="calendar"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Legislator Card 6 - Rep. Michael Chen -->
-                <div class="legislator-card">
-                    <div class="legislator-header">
-                        <div class="legislator-avatar">
-                            <div class="avatar-circle blue">
-                                <span>RMC</span>
-                            </div>
-                            <div class="legislator-info">
-                                <h3 class="legislator-name">Rep. Michael Chen</h3>
-                                <p class="legislator-title">Representative</p>
-                                <p class="legislator-district">District 31</p>
-                            </div>
-                        </div>
-                        <div class="legislator-badges">
-                            <span class="party-badge democrat">Democrat</span>
-                            <span class="relationship-badge moderate">Moderate</span>
-                        </div>
-                    </div>
-
-                    <div class="legislator-contact">
-                        <div class="contact-row">
-                            <i data-lucide="mail" class="contact-icon"></i>
-                            <span>michael.chen@legislature.gov</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="phone" class="contact-icon"></i>
-                            <span>+1 (555) 666-6666</span>
-                        </div>
-                        <div class="contact-row">
-                            <i data-lucide="map-pin" class="contact-icon"></i>
-                            <span>100 State Capitol, Suite 203</span>
-                        </div>
-                    </div>
-
-                    <div class="committees-section">
-                        <p class="committees-label">Committees</p>
-                        <div class="committees-tags">
-                            <span class="committee-tag">Finance</span>
-                            <span class="committee-tag">Small Business</span>
-                        </div>
-                    </div>
-
-                    <div class="legislator-meta">
-                        <span class="meta-text">2 years in office</span>
-                        <span class="meta-text">Last contact: Jan 4, 2025</span>
-                    </div>
-
-                    <div class="legislator-actions">
-                        <div class="social-icons">
-                            <button class="social-btn">
-                                <i data-lucide="globe"></i>
-                            </button>
-                            <button class="social-btn">
-                                <i data-lucide="linkedin"></i>
-                            </button>
-                        </div>
-                        <button class="contact-btn">
-                            <i data-lucide="message-square"></i>
-                            Contact
-                        </button>
-                        <button class="calendar-btn">
-                            <i data-lucide="calendar"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- AI Assistant Tab -->
-        <div id="demo-ai-assistant" class="demo-content">
-            <!-- AI Assistant Header -->
-            <div class="ai-assistant-header">
-                <div class="ai-title-section">
-                    <h2 class="ai-main-title">
-                        <i data-lucide="bot" class="ai-title-icon"></i>
-                        AI Legislative Assistant
-                    </h2>
-                    <p class="ai-subtitle">Get intelligent insights about your bills, clients, and strategy</p>
-                </div>
-                <div class="ai-status-badge">
-                    <i data-lucide="zap"></i>
-                    AI Powered
-                </div>
-            </div>
-
-            <!-- AI Assistant Content Layout -->
-            <div class="ai-assistant-layout">
-                <!-- Quick Insights Section -->
-                <div class="quick-insights-section">
-                    <h3 class="insights-title">
-                        <i data-lucide="lightbulb"></i>
-                        Quick Insights
-                    </h3>
-                    <div class="insights-list">
-                        <button class="insight-prompt">
-                            <i data-lucide="help-circle"></i>
-                            What's the status of our high priority bills?
-                        </button>
-                        <button class="insight-prompt">
-                            <i data-lucide="help-circle"></i>
-                            Show me performance metrics
-                        </button>
-                        <button class="insight-prompt">
-                            <i data-lucide="help-circle"></i>
-                            Which bills need immediate attention?
-                        </button>
-                        <button class="insight-prompt">
-                            <i data-lucide="help-circle"></i>
-                            Analyze TechCorp Industries portfolio
-                        </button>
-                        <button class="insight-prompt">
-                            <i data-lucide="help-circle"></i>
-                            What are the current legislative trends?
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Legislative Intelligence Chat -->
-                <div class="legislative-chat-section">
-                    <h3 class="chat-title">Legislative Intelligence Chat</h3>
-                    <div class="chat-container">
-                        <div class="chat-messages">
-                            <div class="chat-message assistant">
-                                <div class="message-avatar">
-                                    <i data-lucide="bot"></i>
-                                </div>
-                                <div class="message-content">
-                                    <p>Hello! I'm your AI legislative assistant. I can help you analyze bills, identify trends, suggest strategies, and answer questions about your legislative portfolio. How can I assist you today?</p>
-                                    <span class="message-timestamp">6:30:11 PM</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="chat-input-section">
-                            <div class="chat-input-container">
-                                <input type="text" class="chat-input" placeholder="Ask me about your bills, clients, or lobbying strategy...">
-                                <button class="chat-send-btn">
-                                    <i data-lucide="send"></i>
-                                </button>
-                            </div>
-                            <p class="chat-suggestions">Ask about bill progress, client analysis, legislative trends, or strategic recommendations</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- AI Capabilities Section -->
-            <div class="ai-capabilities-section">
-                <h3 class="capabilities-title">AI Capabilities</h3>
-                <div class="capabilities-grid">
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <i data-lucide="bar-chart-3"></i>
-                        </div>
-                        <h4>Bill Analysis</h4>
-                        <p>Track progress, identify trends, and get strategic insights</p>
-                    </div>
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <i data-lucide="users"></i>
-                        </div>
-                        <h4>Client Intelligence</h4>
-                        <p>Portfolio analysis and relationship optimization</p>
-                    </div>
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <i data-lucide="trending-up"></i>
-                        </div>
-                        <h4>Market Trends</h4>
-                        <p>Legislative landscape analysis and predictions</p>
-                    </div>
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <i data-lucide="target"></i>
-                        </div>
-                        <h4>Strategic Guidance</h4>
-                        <p>Personalized recommendations and tactics</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tasks Tab -->
-        <div id="demo-tasks" class="demo-content">
-            <!-- Tasks Header -->
-            <div class="tasks-header">
-                <h2 class="tasks-title">Task Management</h2>
-                <button class="add-task-btn">
-                    <i data-lucide="plus"></i>
-                    Add Task
-                </button>
-            </div>
-
-            <!-- Tasks List -->
-            <div class="tasks-list">
-                <!-- Task 1 -->
-                <div class="task-item">
-                    <div class="task-content">
-                        <div class="task-main">
-                            <div class="task-title-row">
-                                <h3 class="task-title">Schedule meeting with Rep. Smith</h3>
-                                <div class="task-badges">
-                                    <span class="priority-badge high">High</span>
-                                    <span class="status-badge pending">pending</span>
-                                </div>
-                            </div>
-                            <p class="task-description">Discuss HB 101 amendments and timeline</p>
-                            <div class="task-meta">
-                                <div class="task-assignee">
-                                    <i data-lucide="user" class="meta-icon"></i>
-                                    <span>Sarah Johnson</span>
-                                </div>
-                                <div class="task-due-date">
-                                    <i data-lucide="calendar" class="meta-icon"></i>
-                                    <span>Due: Jan 24, 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="task-actions">
-                            <button class="task-action-btn edit">Edit</button>
-                            <button class="task-action-btn complete">
-                                <i data-lucide="check"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Task 2 -->
-                <div class="task-item">
-                    <div class="task-content">
-                        <div class="task-main">
-                            <div class="task-title-row">
-                                <h3 class="task-title">Prepare committee testimony</h3>
-                                <div class="task-badges">
-                                    <span class="priority-badge high">High</span>
-                                    <span class="status-badge in-progress">in progress</span>
-                                </div>
-                            </div>
-                            <p class="task-description">Draft testimony for Healthcare Access Expansion bill</p>
-                            <div class="task-meta">
-                                <div class="task-assignee">
-                                    <i data-lucide="user" class="meta-icon"></i>
-                                    <span>Amanda Williams</span>
-                                </div>
-                                <div class="task-due-date">
-                                    <i data-lucide="calendar" class="meta-icon"></i>
-                                    <span>Due: Jan 29, 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="task-actions">
-                            <button class="task-action-btn edit">Edit</button>
-                            <button class="task-action-btn complete">
-                                <i data-lucide="check"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Task 3 -->
-                <div class="task-item">
-                    <div class="task-content">
-                        <div class="task-main">
-                            <div class="task-title-row">
-                                <h3 class="task-title">Client update report</h3>
-                                <div class="task-badges">
-                                    <span class="priority-badge medium">Medium</span>
-                                    <span class="status-badge pending">pending</span>
-                                </div>
-                            </div>
-                            <p class="task-description">Weekly progress report for TechCorp Industries</p>
-                            <div class="task-meta">
-                                <div class="task-assignee">
-                                    <i data-lucide="user" class="meta-icon"></i>
-                                    <span>Michael Chen</span>
-                                </div>
-                                <div class="task-due-date">
-                                    <i data-lucide="calendar" class="meta-icon"></i>
-                                    <span>Due: Jan 21, 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="task-actions">
-                            <button class="task-action-btn edit">Edit</button>
-                            <button class="task-action-btn complete">
-                                <i data-lucide="check"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 
 
     </div>
@@ -2005,7 +1951,8 @@
 
                     <div class="form-group">
                         <label for="signinPassword" class="form-label">Password</label>
-                        <input type="password" id="signinPassword" class="form-input" placeholder="Enter your password" required>
+                        <input type="password" id="signinPassword" class="form-input" placeholder="Enter your password"
+                            required>
                     </div>
 
                     <div class="sign-in-options">
@@ -2063,13 +2010,14 @@
 
 
     <script>
-    // Analytics
-    !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Ce js Ls Te Fs Ds capture Ye calculateEventProperties zs register register_once register_for_session unregister unregister_for_session Ws getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Bs Us createPersonProfile Hs Ms Gs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Ns debug L qs getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-    posthog.init('phc_kde8883LphyNl6iLbY97sQyZhZ9jQaZamhqMFWovOO4', {
-        api_host: 'https://us.i.posthog.com',
-        defaults: '2025-05-24',
-        person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
-    })
-</script>
+        // Analytics
+        !function (t, e) { var o, n, p, r; e.__SV || (window.posthog && window.posthog.__loaded) || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init Ce js Ls Te Fs Ds capture Ye calculateEventProperties zs register register_once register_for_session unregister unregister_for_session Ws getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Bs Us createPersonProfile Hs Ms Gs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Ns debug L qs getPageViewId captureTraceFeedback captureTraceMetric".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+        posthog.init('phc_kde8883LphyNl6iLbY97sQyZhZ9jQaZamhqMFWovOO4', {
+            api_host: 'https://us.i.posthog.com',
+            defaults: '2025-05-24',
+            person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+        })
+    </script>
 </body>
+
 </html>

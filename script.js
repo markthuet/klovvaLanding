@@ -1,16 +1,16 @@
 // Initialize Lucide icons
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     lucide.createIcons();
 });
 
 
 // Mobile menu functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileNav = document.getElementById('mobileNav');
 
     if (mobileMenuBtn && mobileNav) {
-        mobileMenuBtn.addEventListener('click', function() {
+        mobileMenuBtn.addEventListener('click', function () {
             mobileNav.classList.toggle('active');
 
             // Toggle icon between menu and X
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Close mobile menu when clicking on links
         const mobileLinks = mobileNav.querySelectorAll('a');
         mobileLinks.forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function () {
                 mobileNav.classList.remove('active');
                 const icon = mobileMenuBtn.querySelector('i');
                 icon.setAttribute('data-lucide', 'menu');
@@ -39,11 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Smooth scrolling for anchor links
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const links = document.querySelectorAll('a[href^="#"]');
 
     links.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
 
@@ -59,10 +59,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Add scroll effect to navbar
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('.navbar');
 
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 100) {
             navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
         } else {
@@ -72,19 +72,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Button click handlers
-document.addEventListener('DOMContentLoaded', function() {
-    // Demo button handlers
-    const demoBtns = document.querySelectorAll('.demo-btn, .btn:contains("Demo")');
-    demoBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            alert('Demo functionality would be implemented here. This would redirect to an interactive demo or video.');
-        });
-    });
+document.addEventListener('DOMContentLoaded', function () {
+
 
     // CTA button handlers
     const ctaBtns = document.querySelectorAll('.btn:contains("Start"), .btn:contains("Get Started")');
     ctaBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
             alert('Sign-up functionality would be implemented here. This would redirect to the registration page.');
         });
     });
@@ -92,20 +86,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Contact sales handlers
     const salesBtns = document.querySelectorAll('.btn:contains("Contact Sales")');
     salesBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
             alert('Contact sales functionality would be implemented here. This would open a contact form or redirect to a sales page.');
         });
     });
 });
 
 // Add animation on scroll
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
 
-    const observer = new IntersectionObserver(function(entries) {
+    const observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
@@ -129,7 +123,6 @@ function showApp() {
     document.getElementById('landing-page').style.display = 'none';
     document.getElementById('app-interface').classList.remove('hidden');
     document.getElementById('sign-in-page').classList.add('hidden');
-    document.getElementById('demo-page').classList.add('hidden');
     document.body.style.overflow = 'hidden';
 
     lucide.createIcons();
@@ -139,7 +132,6 @@ function showLanding() {
     document.getElementById('landing-page').style.display = 'block';
     document.getElementById('app-interface').classList.add('hidden');
     document.getElementById('sign-in-page').classList.add('hidden');
-    document.getElementById('demo-page').classList.add('hidden');
     document.body.style.overflow = 'auto';
 
     // Show the original navbar when returning to landing page
@@ -152,7 +144,6 @@ function showSignIn() {
     document.getElementById('landing-page').style.display = 'none';
     document.getElementById('app-interface').classList.add('hidden');
     document.getElementById('sign-in-page').classList.remove('hidden');
-    document.getElementById('demo-page').classList.add('hidden');
     document.body.style.overflow = 'auto';
 
     // Show the original navbar on sign in page
@@ -161,18 +152,7 @@ function showSignIn() {
     lucide.createIcons();
 }
 
-function showDemo() {
-    document.getElementById('landing-page').style.display = 'none';
-    document.getElementById('app-interface').classList.add('hidden');
-    document.getElementById('sign-in-page').classList.add('hidden');
-    document.getElementById('demo-page').classList.remove('hidden');
-    document.body.style.overflow = 'auto';
 
-    // Hide the original navbar when in demo mode
-    document.querySelector('.navbar').style.display = 'none';
-
-    lucide.createIcons();
-}
 
 function handleSignIn() {
     const email = document.getElementById('signinEmail').value;
@@ -185,39 +165,15 @@ function handleSignIn() {
     }
 }
 
-// Demo page tab functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const demoTabs = document.querySelectorAll('.demo-tab');
-    const demoContents = document.querySelectorAll('.demo-content');
 
-    demoTabs.forEach(tab => {
-        tab.addEventListener('click', function() {
-            const targetTab = this.dataset.tab;
-
-            // Remove active class from all tabs and contents
-            demoTabs.forEach(t => t.classList.remove('active'));
-            demoContents.forEach(content => content.classList.remove('active'));
-
-            // Add active class to clicked tab and corresponding content
-            this.classList.add('active');
-            const targetContent = document.getElementById(targetTab);
-            if (targetContent) {
-                targetContent.classList.add('active');
-            }
-
-            // Reinitialize icons after tab switch
-            lucide.createIcons();
-        });
-    });
-});
 
 // App tab functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const appTabs = document.querySelectorAll('.app-tab');
     const tabContents = document.querySelectorAll('.tab-content');
 
     appTabs.forEach(tab => {
-        tab.addEventListener('click', function() {
+        tab.addEventListener('click', function () {
             const targetTab = this.dataset.tab;
 
             // Remove active class from all tabs and contents
@@ -235,13 +191,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // AI Assistant chat functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const aiInput = document.getElementById('aiInput');
     const quickPrompts = document.querySelectorAll('.prompt-btn');
 
     // Handle quick prompts
     quickPrompts.forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
             const promptText = this.textContent.trim();
             handleAiMessage(promptText);
         });
@@ -249,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Handle AI input
     if (aiInput) {
-        aiInput.addEventListener('keypress', function(e) {
+        aiInput.addEventListener('keypress', function (e) {
             if (e.key === 'Enter' && this.value.trim()) {
                 handleAiMessage(this.value.trim());
                 this.value = '';
