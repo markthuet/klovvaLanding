@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function showApp() {
     document.getElementById('landing-page').style.display = 'none';
     document.getElementById('app-interface').classList.remove('hidden');
-    document.getElementById('sign-in-page').classList.add('hidden');
+    document.getElementById('signin-page').classList.add('hidden');
     document.body.style.overflow = 'hidden';
 
     lucide.createIcons();
@@ -131,7 +131,7 @@ function showApp() {
 function showLanding() {
     document.getElementById('landing-page').style.display = 'block';
     document.getElementById('app-interface').classList.add('hidden');
-    document.getElementById('sign-in-page').classList.add('hidden');
+    document.getElementById('signin-page').classList.add('hidden');
     document.body.style.overflow = 'auto';
 
     // Show the original navbar when returning to landing page
@@ -143,7 +143,7 @@ function showLanding() {
 function showSignIn() {
     document.getElementById('landing-page').style.display = 'none';
     document.getElementById('app-interface').classList.add('hidden');
-    document.getElementById('sign-in-page').classList.remove('hidden');
+    document.getElementById('signin-page').classList.remove('hidden');
     document.body.style.overflow = 'auto';
 
     // Show the original navbar on sign in page
@@ -155,8 +155,8 @@ function showSignIn() {
 
 
 function handleSignIn() {
-    const email = document.getElementById('signinEmail').value;
-    const password = document.getElementById('signinPassword').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
 
     if (email && password) {
         alert('Sign in functionality would be implemented here. This would authenticate the user and redirect to the dashboard.');
