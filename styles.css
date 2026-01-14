@@ -2028,6 +2028,18 @@ p {
     flex-shrink: 0;
 }
 
+/* Single Pricing Container */
+.pricing-single-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.pricing-contact-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
 /* CTA Section */
 .cta {
     padding: 6rem 0;
